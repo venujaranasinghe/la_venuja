@@ -24,7 +24,9 @@ const Header = ({
                 <Link href="/" aria-label="Home">
                     <Logo invert={invert}>la_venuja</Logo>
                 </Link>
-
+                <div>
+                    //31.10
+                </div>
             </div>
         </Container>
     )
