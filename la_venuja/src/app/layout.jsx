@@ -1,27 +1,20 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import RootLayout from "@/components/RootLayout";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import "./globals.css";
 
 export const metadata = {
-  title: "Venuja Ranasinghe"
+  title: {
+    template: "blog_app",
+    default: "Personal Blog - A feature to make you famous",
+  },
 };
 
 export default function Layout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html
+      lang="en"
+      className="h-full bg-neutral-950 text-base antialiased text-neutral-100"
+    >
+      <body className="flex min-h-full flex-col">
         <RootLayout>{children}</RootLayout>
       </body>
     </html>

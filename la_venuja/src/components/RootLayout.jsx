@@ -144,7 +144,7 @@ const RootLayoutInner = ({ children }) => {
             style={{ height: expanded ? "auto" : "0.5rem" }}
             className="relative z-50 overflow-hidden bg-neutral-950 pt-2"
             aria-hidden={expanded ? undefined : "true"}
-            inert={expanded ? undefined : ""}
+            inert={expanded ? false : true}
           >
             <motion.div layout className="bg-neutral-800">
               <div ref={navRef} className="bg-neutral-950 pb-16 pt-14">
@@ -169,7 +169,7 @@ const RootLayoutInner = ({ children }) => {
                   <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
                     <div>
                       <h2 className="font-display text-base font-semibold text-white">
-                        Our offices
+                        How to contact me
                       </h2>
                       <Offices
                         invert
@@ -178,7 +178,7 @@ const RootLayoutInner = ({ children }) => {
                     </div>
                     <div className="sm:border-l sm:border-transparent sm:pl-16">
                       <h2 className="font-display text-base font-semibold text-white">
-                        Follow us
+                        Let's Connect!
                       </h2>
                       <SocialMedia className="mt-6" invert />
                     </div>
@@ -199,7 +199,7 @@ const RootLayoutInner = ({ children }) => {
           >
             <main className="w-full flex-auto">{children}</main>
             {/* Footer */}
-            {/* <Footer /> */}
+            <Footer />
           </motion.div>
         </motion.div>
       </MotionConfig>
