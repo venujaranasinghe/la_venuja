@@ -73,39 +73,84 @@ const ProcessPage = () => {
     const certificates = [
         {
           id: 1,
-          title: "AWS Certified Cloud Practitioner",
-          issuer: "Amazon Web Services",
+          title: "Computer Science (Undergraduate)",
+          issuer: "SLIIT",
           date: "June 2023",
-          credentialId: "AWS123456789",
+          credentialId: "",
           verifyUrl: "https://aws.amazon.com/verification",
-          imageUrl: "/1.png"
+          imageUrl: "/images.jpg"
         },
         {
           id: 2,
-          title: "Google Data Analytics Professional Certificate",
-          issuer: "Google",
-          date: "March 2023",
-          credentialId: "GA123456789",
+          title: "Fundamentals of DevOps On AWS",
+          issuer: "SimpliLearn",
+          date: "January 2025",
+          credentialId: "7807177",
           verifyUrl: "https://coursera.org/verify/GA123456789",
-          imageUrl: "/1.png"
+          imageUrl: "/c1.png"
         },
         {
           id: 3,
-          title: "Microsoft Certified: Azure Fundamentals",
-          issuer: "Microsoft",
-          date: "January 2023",
-          credentialId: "MS123456789",
+          title: "Python for Beginners",
+          issuer: "CODL-UOM",
+          date: "December 2024",
+          credentialId: "OR5BIOdVUJ",
           verifyUrl: "https://learn.microsoft.com/verify",
-          imageUrl: "/1.png"
+          imageUrl: "/c2.png"
         },
         {
           id: 4,
-          title: "React Developer Certification",
-          issuer: "Meta",
-          date: "November 2022",
-          credentialId: "REACT123456",
+          title: "AI/ML Engineer - Stage 1",
+          issuer: "SLIIT",
+          date: "November 2024",
+          credentialId: "cxxkska4dc",
           verifyUrl: "https://coursera.org/verify/REACT123456",
-          imageUrl: "/1.png"
+          imageUrl: "/c4.png"
+        },
+        {
+          id: 5,
+          title: "AI/ML Engineer - Stage 2",
+          issuer: "SLIIT",
+          date: "December 2024",
+          credentialId: "wt5gx3gucq",
+          verifyUrl: "https://coursera.org/verify/REACT123456",
+          imageUrl: "/c5.png"
+        },
+        {
+          id: 6,
+          title: "Web Design for Beginners",
+          issuer: "CODL-UOM",
+          date: "January 2025",
+          credentialId: "oDWpAZVnPQ",
+          verifyUrl: "https://coursera.org/verify/REACT123456",
+          imageUrl: "/c4.png"
+        },
+        {
+          id: 7,
+          title: "Completion of Full Stack Project",
+          issuer: "GreatStack",
+          date: "December 2024",
+          credentialId: "",
+          verifyUrl: "https://coursera.org/verify/REACT123456",
+          imageUrl: "/c7.png"
+        },
+        {
+          id: 8,
+          title: "Artificial Intelligence Foundations: ML",
+          issuer: "LinkedIn Learning",
+          date: "January 2025",
+          credentialId: "",
+          verifyUrl: "https://coursera.org/verify/REACT123456",
+          imageUrl: "/c8.png"
+        },
+        {
+          id: 9,
+          title: "Artificial Intelligence Foundations: Neural Networks",
+          issuer: "LinkedIn Learning",
+          date: "January 2025",
+          credentialId: "",
+          verifyUrl: "https://coursera.org/verify/REACT123456",
+          imageUrl: "/c9.png"
         }
       ];
 
