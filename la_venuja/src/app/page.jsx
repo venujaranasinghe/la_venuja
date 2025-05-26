@@ -5,6 +5,7 @@ import FadeIn from "@/components/FadeIn";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import logoPhobiaDark from "@/images/clients/green-life/logo-dark.svg";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
   return (
