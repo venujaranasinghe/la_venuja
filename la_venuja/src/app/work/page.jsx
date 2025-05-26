@@ -6,7 +6,7 @@ const WorkPage = () => {
     <>
       <PageIntro
         eyebrow="My work"
-        title="Proven solutions for real-world problems."
+        title="Explore my recent work and projects."
       >
         <p>
           We believe in efficiency and maximizing our resources to provide the
