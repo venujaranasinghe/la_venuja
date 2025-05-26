@@ -72,27 +72,44 @@ const WorkPage = () => {
   const projects = [
     {
       id: 1,
-      title: "E-commerce Platform",
-      description: "Developed a comprehensive online shopping platform with secure payment processing, inventory management, and customer analytics. Implemented responsive design for optimal mobile experience.",
-      tags: ["React", "Node.js", "MongoDB", "Stripe API"],
+      title: "React Vite Portfolio",
+      description: "Built with React.js and Vite, highlights my projects, skills, and experience through a fast, responsive, and modern design.",
+      tags: ["React", "CSS"],
       imageUrl: "/1.png",
-      projectUrl: "https://example.com"
+      projectUrl: "https://venujaranasinghe.github.io/portfolio-react/",
     },
     {
       id: 2,
-      title: "Portfolio Website",
-      description: "Designed and built a modern, performant portfolio website with CMS integration for easy content updates. Focused on accessibility and SEO best practices.",
-      tags: ["Next.js", "Tailwind CSS", "Sanity CMS"],
-      imageUrl: "/1.png",
+      title: "Floral Shop Admin Dashboard",
+      description: "A comprehensive admin dashboard for a floral shop, built with Spring Boot, enabling order management, inventory tracking, and customer interactions.",
+      tags: ["Java", "Thymleaf", "Springboot"],
+      imageUrl: "/3.png",
+      projectUrl: "https://github.com/venujaranasinghe/OOAD-Group-Assignment",
     },
     {
       id: 3,
-      title: "Task Management App",
-      description: "Created a productivity application with real-time collaboration features, drag-and-drop interface, and cross-device synchronization.",
-      tags: ["React", "Firebase", "Redux", "React DnD"],
-      imageUrl: "/1.png",
-      projectUrl: "https://example.com/taskapp"
+      title: "MERN Blog App Admin Dashboard",
+      description: "An intuitive admin dashboard for the blog app, providing efficient post management, user controls, and analytics for streamlined content moderation.",
+      tags: ["React", "MongoDB", "NodeJS", "Tailwind"],
+      imageUrl: "/4.png",
+      projectUrl: "https://github.com/venujaranasinghe/FullStack-Blog/tree/main/backend"
     },
+    {
+      id: 4,
+      title: "Full-Stack Blogging Platform",
+      description: "A feature-rich blog app built with Next.js and MongoDB, offering seamless content management, dynamic posts, and a smooth user experience.",
+      tags: ["Next", "MongoDB", "Tailwind"],
+      imageUrl: "/5.png",
+      projectUrl: "https://github.com/venujaranasinghe/FullStack-Blog"
+    },
+    {
+      id: 5,
+      title: "3D Animated Portfolio",
+      description: "A visually engaging portfolio with smooth 3D animations, built using React.js and Framer Motion for an immersive experience.",
+      tags: ["React", "ThreeJs", "Tailwind"],
+      imageUrl: "/7.png",
+      projectUrl: "https://github.com/venujaranasinghe/3d-animated-portfolio"
+    }
   ];
 
   const controls = useAnimation();
