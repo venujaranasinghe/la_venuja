@@ -15,44 +15,42 @@ const Values = () => {
       </div>
       <SectionIntro
         eyebrow="Values"
-        title="Balancing reliability and innovation"
+        title="Combining reliability with curiosity"
       >
         <p>
-          I strive to stay at the forefront of emerging trends and
-          technologies, while completely ignoring them and forking that old
-          Rails project I feel comfortable using. I stand by my core values
-          to justify that decision.
+          I believe in building software that's not only functional but thoughtfully crafted.
+          I stay updated with emerging technologies while grounding my work in solid, proven practices.
         </p>
       </SectionIntro>
       <Container className="mt-24">
         <GridList>
           <GridListItem title="Meticulous">
-            The first part of any partnership is getting our designer to put
-            your logo in our template. The second step is getting them to do the
-            colors.
+            I pay close attention to detail in every line of code, from logic to UI.
+            Clean, maintainable code is just as important to me as the final product.
           </GridListItem>
           <GridListItem title="Efficient">
-            We pride ourselves on never missing a deadline which is easy because
-            most of the work was done years ago.
+            I focus on solving problems with optimized and practical solutions,
+            ensuring time and resources are used wisely without compromising quality.
           </GridListItem>
           <GridListItem title="Adaptable">
-            Every business has unique needs and our greatest challenge is
-            shoe-horning those needs into something we already built.
+            I'm quick to learn and adjust—whether it's a new framework, a design shift, or a team workflow.
+            Each challenge is an opportunity to grow.
           </GridListItem>
           <GridListItem title="Honest">
-            We are transparent about all of our processes, banking on the simple
-            fact our clients never actually read anything.
+            Transparency is key. I’m open about what I can do, how long it’ll take,
+            and how I approach each project—communication builds trust.
           </GridListItem>
           <GridListItem title="Loyal">
-            We foster long-term relationships with our clients that go beyond
-            just delivering a product, allowing us to invoice them for decades.
+            I value long-term collaboration and treat every project with commitment and care,
+            whether it’s a one-time task or an ongoing partnership.
           </GridListItem>
           <GridListItem title="Innovative">
-            The technological landscape is always evolving and so are we. We are
-            constantly on the lookout for new open source projects to clone.
+            I enjoy experimenting with new tools, frameworks, and ideas to find better ways of solving problems
+            and creating meaningful digital experiences.
           </GridListItem>
         </GridList>
       </Container>
+
     </div>
   );
 };
