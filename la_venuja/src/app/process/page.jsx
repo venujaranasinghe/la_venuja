@@ -28,7 +28,7 @@ const CertificateCard = ({ certificate, index }) => {
           />
           <div className="absolute top-4 left-4 z-20">
             <div className="bg-white/90 backdrop-blur-sm rounded-full p-2 shadow-lg">
-              <Award className="w-5 h-5 text-blue-600" />
+              <Award className="w-5 h-5 text-gray-600" />
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@ const CertificateCard = ({ certificate, index }) => {
         <div className="p-8 lg:w-3/5 flex flex-col justify-between">
           <div>
             <div className="flex items-start justify-between mb-4">
-              <h3 className="text-xl lg:text-2xl font-bold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors duration-300">
+              <h3 className="text-xl lg:text-2xl font-bold text-gray-900 leading-tight group-hover:text-black-600 transition-colors duration-300">
                 {certificate.title}
               </h3>
             </div>
@@ -71,7 +71,8 @@ const CertificateCard = ({ certificate, index }) => {
               href={certificate.verifyUrl || certificate.imageUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium rounded-xl hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-black to-gray-900 text-white font-medium rounded-xl hover:from-gray-800 hover:to-black transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+
             >
               View Certificate
               <ExternalLink className="w-4 h-4 ml-2" />
@@ -204,15 +205,15 @@ const ProcessPage = () => {
             className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12"
           >
             <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl border border-blue-100">
-              <div className="text-3xl font-bold text-blue-600 mb-2">{certificates.length}</div>
+              <div className="text-3xl font-bold text-gray-600 mb-2">{certificates.length}</div>
               <div className="text-gray-600 font-medium">Total Certificates</div>
             </div>
             <div className="text-center p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl border border-green-100">
-              <div className="text-3xl font-bold text-green-600 mb-2">5+</div>
+              <div className="text-3xl font-bold text-gray-600 mb-2">5+</div>
               <div className="text-gray-600 font-medium">Learning Platforms</div>
             </div>
             <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl border border-purple-100">
-              <div className="text-3xl font-bold text-purple-600 mb-2">2024-2025</div>
+              <div className="text-3xl font-bold text-gray-600 mb-2">2024-2025</div>
               <div className="text-gray-600 font-medium">Active Learning Period</div>
             </div>
           </motion.div>
