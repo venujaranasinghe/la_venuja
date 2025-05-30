@@ -14,7 +14,6 @@ export default function TypingAnimation() {
     "こんにちは!",   // Japanese (Konnichiwa)
     "안녕하세요!",   // Korean (Annyeonghaseyo)
     "你好!",         // Chinese (Nǐ hǎo)
-    "สวัสดี!",       // Thai (S̄wạs̄dī)
     "नमस्ते!",       // Hindi (Namaste)
     "Привет!",      // Russian (Privet)
   ];
