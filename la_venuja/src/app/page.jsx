@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import logoPhobiaDark from "@/images/clients/green-life/logo-dark.svg";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import TypingAnimation from "@/components/TypingAnimation";
 
 export default function Home() {
   return (
@@ -13,12 +14,12 @@ export default function Home() {
       <Container className="mt-24 sm:mt-32">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Hello there!
+            <TypingAnimation />
             <br />
             I'm Venuja
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-          An undergraduate computer science student at SLIIT with a passion for building innovative projects and solving real-world problems through technology.
+            An undergraduate computer science student at SLIIT with a passion for building innovative projects and solving real-world problems through technology.
           </p>
         </FadeIn>
       </Container>
