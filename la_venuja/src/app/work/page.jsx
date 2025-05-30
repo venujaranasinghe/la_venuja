@@ -132,7 +132,7 @@ const WorkPage = () => {
         "An intuitive admin dashboard for the blog app, providing efficient post management, user controls, and analytics for streamlined content moderation with modern UI/UX.",
       tags: ["React", "MongoDB", "Node.js", "Express", "Tailwind"],
       imageUrl: "/4.png",
-      projectUrl: "https://github.com/venujaranasinghe/FullStack-Blog/tree/main/backend",
+      projectUrl: "https://full-stack-blog-lake.vercel.app/login",
       githubUrl: "https://github.com/venujaranasinghe/FullStack-Blog",
     },
     {
@@ -152,7 +152,7 @@ const WorkPage = () => {
         "A visually engaging portfolio with smooth 3D animations, built using React.js and Three.js for an immersive experience. Features interactive 3D models and particle systems.",
       tags: ["React", "Three.js", "Framer Motion", "Tailwind"],
       imageUrl: "/7.png",
-      projectUrl: "https://github.com/venujaranasinghe/3d-animated-portfolio",
+      projectUrl: "https://venuja-ranasinghe.vercel.app/",
       githubUrl: "https://github.com/venujaranasinghe/3d-animated-portfolio",
     },
   ]
