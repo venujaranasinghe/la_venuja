@@ -29,7 +29,7 @@ export default function SplashScreen() {
         transition={{ duration: 0.5 }}
         className="text-4xl font-bold text-white"
       >
-        Welcome to la_Venuja
+        WELCOME TO MY PORTFOLIO!
       </motion.div>
     </motion.div>
   );
