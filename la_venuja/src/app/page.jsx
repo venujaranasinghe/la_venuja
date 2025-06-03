@@ -5,9 +5,9 @@ import FadeIn from "@/components/FadeIn";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import logoPhobiaDark from "@/images/clients/green-life/logo-dark.svg";
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import TypingAnimation from "@/components/TypingAnimation";
 import SplashScreen from "@/components/SplashScreen";
+import ChatBot from "@/components/ChatBot";
 
 export default function Home() {
   return (
@@ -36,6 +36,7 @@ export default function Home() {
       </Testimonials>
       <Services />
       <ContactSection />
+      <ChatBot />
     </main>
   );
 }
