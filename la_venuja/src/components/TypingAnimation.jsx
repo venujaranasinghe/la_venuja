@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 export default function TypingAnimation() {
   const greetings = [
-    "Hello there!", // English
+    "Hello0000 there!", // English
     "Hola!",        // Spanish
     "Bonjour!",     // French
     "Hallo!",       // German
