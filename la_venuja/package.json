@@ -9,9 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@codemirror/lang-css": "^6.3.1",
+    "@codemirror/lang-html": "^6.4.9",
+    "@codemirror/lang-javascript": "^6.2.4",
     "@emailjs/browser": "^4.4.1",
     "@monaco-editor/react": "^4.7.0",
     "@types/prismjs": "^1.26.5",
+    "@uiw/codemirror-theme-dracula": "^4.23.12",
+    "@uiw/react-codemirror": "^4.23.12",
     "@vercel/speed-insights": "^1.2.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.13.0",
@@ -26,12 +31,13 @@
     "react-simple-code-editor": "^0.14.1"
   },
   "devDependencies": {
+    "@babel/runtime": "^7.27.4",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "autoprefixer": "^10.4.21",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^4.1.7"
+    "postcss": "^8.5.4",
+    "tailwindcss": "^4.1.8"
   }
 }
