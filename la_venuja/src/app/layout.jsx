@@ -1,4 +1,5 @@
 import RootLayout from "@/components/RootLayout";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import "./globals.css";
 
 export const metadata = {
@@ -16,6 +17,7 @@ export default function Layout({ children }) {
     >
       <body className="flex min-h-full flex-col">
         <RootLayout>{children}</RootLayout>
+        <SpeedInsights />
       </body>
     </html>
   );
