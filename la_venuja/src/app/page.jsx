@@ -7,10 +7,12 @@ import Testimonials from "@/components/Testimonials";
 import logoPhobiaDark from "@/images/clients/green-life/logo-dark.svg";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import TypingAnimation from "@/components/TypingAnimation";
+import SplashScreen from "@/components/SplashScreen";
 
 export default function Home() {
   return (
     <main className="text-black">
+      <SplashScreen />
       <Container className="mt-24 sm:mt-32">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
