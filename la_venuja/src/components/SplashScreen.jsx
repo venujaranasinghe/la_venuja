@@ -55,7 +55,7 @@ export default function SplashScreen({ onComplete }) {
         <div className={`logo-container ${animationPhase >= 2 ? "glow" : ""}`}>
           <h1 className="name">Venuja Ranasinghe</h1>
           <div className="divider" />
-          <p className="title">Computer Science Undergrad</p>
+          <p className="title">Welcome</p>
         </div>
       </div>
 
