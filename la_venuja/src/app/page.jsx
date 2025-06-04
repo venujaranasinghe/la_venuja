@@ -7,7 +7,7 @@ import Testimonials from "@/components/Testimonials";
 import logoPhobiaDark from "@/images/clients/green-life/logo-dark.svg";
 import TypingAnimation from "@/components/TypingAnimation";
 import SplashScreen from "@/components/SplashScreen";
-import ChatBot from "@/components/ChatBot";
+import Chatbot from "@/components/Chatbot";
 
 export default function Home() {
   return (
@@ -36,7 +36,7 @@ export default function Home() {
       </Testimonials>
       <Services />
       <ContactSection />
-      <ChatBot />
+      <Chatbot />
     </main>
   );
 }
