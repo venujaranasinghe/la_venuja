@@ -20,16 +20,16 @@ export default function Home() {
 
   return (
     <main className="text-black">
-      {showSplash && <SplashScreen onComplete={handleSplashComplete} />}
-
-      {!showSplash && (
+      {showSplash ? (
+        <SplashScreen onComplete={handleSplashComplete} />
+      ) : (
         <>
           <Container className="mt-24 sm:mt-32">
             <FadeIn className="max-w-3xl">
               <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
                 <TypingAnimation />
                 <br />
-                I'm Venuja
+                I&apos;m Venuja
               </h1>
               <p className="mt-6 text-xl text-neutral-600">
                 An undergraduate computer science student at SLIIT with a passion for building innovative projects and
@@ -38,18 +38,35 @@ export default function Home() {
               <a
                 href="/assets/sample-cv.pdf"
                 download
-                className="mt-8 inline-block rounded-full px-6 py-3 text-sm font-medium text-white bg-neutral-950 hover:bg-neutral-800 transition-colors"
+                className="group relative mt-8 inline-flex items-center gap-2 rounded-full bg-neutral-950 px-6 py-3 text-sm font-medium text-white transition-transform duration-300 hover:scale-105 hover:bg-opacity-90"
               >
-                Download CV
+                <span className="relative z-10">Download CV</span>
+                <svg
+                  className="h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
               </a>
             </FadeIn>
           </Container>
+
           <Clients />
+
           <Testimonials className="mt-24 sm:mt-32 lg:mt-40" client={{ name: "la_Venuja", logo: logoPhobiaDark }}>
-            I'm currently available to take on new projects, so feel free to send me a message about anything that you
-            want me to work on. You can contact anytime.
+            I&apos;m currently available to take on new projects, so feel free to send me a message about anything that
+            you want me to work on. You can contact anytime.
           </Testimonials>
+
           <Services />
+
           <ContactSection />
         </>
       )}
