@@ -10,7 +10,6 @@ import Testimonials from "@/components/Testimonials"
 import logoPhobiaDark from "@/images/clients/green-life/logo-dark.svg"
 import TypingAnimation from "@/components/TypingAnimation"
 import SplashScreen from "@/components/SplashScreen"
-import Chatbot from "@/components/Chatbot"
 
 export default function Home() {
   const [showSplash, setShowSplash] = useState(true)
@@ -36,6 +35,13 @@ export default function Home() {
                 An undergraduate computer science student at SLIIT with a passion for building innovative projects and
                 solving real-world problems through technology.
               </p>
+              <a
+                href="/assets/sample-cv.pdf"
+                download
+                className="mt-8 inline-block rounded-full px-6 py-3 text-sm font-medium text-white bg-neutral-950 hover:bg-neutral-800 transition-colors"
+              >
+                Download CV
+              </a>
             </FadeIn>
           </Container>
           <Clients />
@@ -45,7 +51,6 @@ export default function Home() {
           </Testimonials>
           <Services />
           <ContactSection />
-          <Chatbot />
         </>
       )}
     </main>

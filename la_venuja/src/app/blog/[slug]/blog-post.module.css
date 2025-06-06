@@ -1,0 +1,238 @@
+.container {
+    min-height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .wrapper {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+  }
+  
+  .backButton {
+    display: inline-flex;
+    align-items: center;
+    color: #475569;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .backButton:hover {
+    color: #1e293b;
+  }
+  
+  .header {
+    margin-bottom: 2rem;
+  }
+  
+  .meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .category {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #475569;
+    background-color: #f1f5f9;
+    border-radius: 9999px;
+  }
+  
+  .readTime {
+    color: #6b7280;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+  }
+  
+  @media (min-width: 768px) {
+    .title {
+      font-size: 3.75rem;
+    }
+  }
+  
+  .authorMeta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+  
+  .excerpt {
+    font-size: 1.25rem;
+    color: #6b7280;
+    line-height: 1.625;
+  }
+  
+  .imageContainer {
+    aspect-ratio: 16 / 9;
+    background-color: #f3f4f6;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .content {
+    color: #374151;
+    font-size: 1.125rem;
+    line-height: 1.75;
+  }
+  
+  /* Prose styles for blog content */
+  .content h1 {
+    color: #111827;
+    font-weight: 800;
+    font-size: 2.25rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    line-height: 1.1111111;
+  }
+  
+  .content h2 {
+    color: #111827;
+    font-weight: 700;
+    font-size: 1.875rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.3333333;
+  }
+  
+  .content h3 {
+    color: #111827;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .content p {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .content a {
+    color: #4f46e5;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  
+  .content a:hover {
+    color: #3730a3;
+  }
+  
+  .content strong {
+    color: #111827;
+    font-weight: 600;
+  }
+  
+  .content ul {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    padding-left: 1.625rem;
+  }
+  
+  .content li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .content blockquote {
+    font-weight: 500;
+    font-style: italic;
+    color: #111827;
+    border-left: 0.25rem solid #e5e7eb;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    padding-left: 1rem;
+  }
+  
+  .content code {
+    color: #111827;
+    font-weight: 600;
+    font-size: 0.875rem;
+    background-color: #f3f4f6;
+    padding: 0.25rem 0.375rem;
+    border-radius: 0.25rem;
+  }
+  
+  .content pre {
+    color: #e5e7eb;
+    background-color: #1f2937;
+    overflow-x: auto;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.7142857;
+    margin-top: 1.7142857em;
+    margin-bottom: 1.7142857em;
+    border-radius: 0.375rem;
+    padding: 0.8571429em 1.1428571em;
+  }
+  
+  .footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .allPostsButton {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: #475569;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .allPostsButton:hover {
+    color: #1e293b;
+    background-color: #f1f5f9;
+  }
+  
+  .shareSection {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .shareLabel {
+    color: #6b7280;
+  }
+  
+  .shareButton {
+    padding: 0.25rem 0.75rem;
+    color: #475569;
+    background: none;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .shareButton:hover {
+    color: #1e293b;
+    background-color: #f1f5f9;
+  }
+  
