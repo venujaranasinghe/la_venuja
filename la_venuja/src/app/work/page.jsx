@@ -155,6 +155,16 @@ const WorkPage = () => {
       projectUrl: "https://venuja-ranasinghe.vercel.app/",
       githubUrl: "https://github.com/venujaranasinghe/3d-animated-portfolio",
     },
+    {
+      id: 6,
+      title: "The Book I Never Wrote",
+      description:
+        "This is the book I never plan to write in a amazing web experience",
+      tags: ["React", "Springboot"],
+      imageUrl: "/8.png",
+      projectUrl: "https://the-book-i-never-wrote.vercel.app/",
+      githubUrl: "https://github.com/venujaranasinghe/",
+    },
   ]
 
   const controls = useAnimation()
