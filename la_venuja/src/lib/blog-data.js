@@ -1,33 +1,44 @@
 // Sample blog data - replace with your actual data source
 const blogPosts = [
     {
-      slug: "building-scalable-react-applications",
-      title: "Building Scalable React Applications: Lessons Learned",
+      slug: "blog-1",
+      title: "How I Apply the 80/20 Rule to Maximize My Productivity as a Undergraduate",
       excerpt:
-        "Exploring best practices and architectural patterns that have helped me build maintainable React applications at scale.",
+        "As a third-year computer science undergraduate, here’s how I use the 80/20 rule to study smarter, live better, and grow faster:",
       content: `
-        <p>Building scalable React applications requires careful consideration of architecture, state management, and component design. Over the years, I've learned several key principles that have made my applications more maintainable and performant.</p>
-        
-        <h2>Component Architecture</h2>
-        <p>One of the most important aspects of scalable React applications is having a well-thought-out component architecture. I've found that following the principle of composition over inheritance leads to more flexible and reusable components.</p>
-        
-        <h3>Container vs Presentational Components</h3>
-        <p>Separating concerns between container components (that handle logic and state) and presentational components (that focus on UI) has been crucial for maintainability. This pattern makes components easier to test and reason about.</p>
-        
-        <h2>State Management</h2>
-        <p>Choosing the right state management solution depends on your application's complexity. For smaller applications, React's built-in useState and useContext might be sufficient. For larger applications, consider Redux Toolkit or Zustand.</p>
-        
-        <h3>Performance Optimization</h3>
-        <p>Performance optimization should be done strategically. Use React.memo for expensive components, implement proper key props for lists, and consider code splitting for large applications.</p>
-        
-        <p>These practices have helped me build applications that scale well with team size and feature complexity. The key is to start with good foundations and refactor as you learn more about your application's needs.</p>
+        <p>You’ve probably heard of the 80/20 rule, also known as the Pareto Principle—the idea that 80% of results come from 20% of efforts. Over time, I’ve found this principle to be one of the most practical mental models for improving focus and output—not just in academics, but in everyday life.</p>
+
+        <h2>Studying Smart, Not Just Hard</h2>
+
+        <p>In any subject, not all topics carry equal weight. I identify the core 20%—the foundational concepts or high-probability exam content—and double down on those.</p> 
+        <p>Instead of reading everything once, I focus on active recall, use spaced repetition, and revisit the high-impact material regularly. It’s helped me prepare faster and retain more.</p>
+
+        <h2>Time Management</h2>
+
+        <p>I used to fill my day with task after task. But most of them didn’t really move the needle. Now, I ask myself: What 20% of actions will create 80% of the progress?</p>
+        <p>This mindset helps me focus on things that matter—like final-year projects, personal portfolio development, or high-impact assignments—while letting go of perfectionism in low-value tasks.</p>
+
+        <h2>Relationships and Social Life</h2>
+
+        <p>As someone who values deep connections, I focus on the few relationships that truly energize me. I’ve learned that a handful of meaningful friendships provide most of the support, motivation, and joy in my life.</p>
+        <p>On social media, I apply the same filter—I follow only the most insightful creators who help me grow technically, mentally, or creatively.</p>
+
+        <h2>Skill Building and Projects</h2>
+
+        <p>Rather than jumping from one course to another, I choose projects that combine multiple learning outcomes.</p>
+        <p>For instance, a recent web app I built allowed me to improve my skills in Spring Boot, REST APIs, frontend integration, and even basic DevOps deployment.</p>
+        <p>I also prioritize learning tools that are relevant in the real world—even if that means letting go of topics that seem interesting but don’t add immediate value.</p>
+
+        <h2>Final Thought</h2>
+        <p>The 80/20 rule has become more than just a productivity hack—it’s a way of thinking. By focusing on the vital few rather than the trivial many, I’ve found more clarity, less stress, and better results.</p>
+        <p>Whether you're a student, developer, or just trying to do more with less, I highly recommend trying this mindset shift. You'll be surprised how powerful it is.</p>
       `,
-      category: "React",
-      date: "2024-01-15",
-      formattedDate: "January 15, 2024",
-      author: "Your Name",
+      category: "Life",
+      date: "2025-05-11",
+      formattedDate: "May 11, 2025",
+      author: "Venuja Ranasinghe",
       readTime: "8 min read",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/Blog1.png",
     },
   ]
   
