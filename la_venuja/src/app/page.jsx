@@ -10,6 +10,9 @@ import Testimonials from "@/components/Testimonials"
 import logoPhobiaDark from "@/images/clients/green-life/logo-dark.svg"
 import TypingAnimation from "@/components/TypingAnimation"
 import SplashScreen from "@/components/SplashScreen"
+import WhatsAppButton from "@/components/whatsapp-button"
+import WhatsAppSimple from "@/components/whatsapp-simple"
+import WhatsAppButtonAdvanced from "@/components/whatsapp-button-advanced"
 
 export default function Home() {
   const [showSplash, setShowSplash] = useState(true)
@@ -58,6 +61,26 @@ export default function Home() {
             </FadeIn>
           </Container>
 
+          {/* <WhatsAppButton
+            phoneNumber="+94776847372"
+            message="Hi! I saw your portfolio and would like to discuss a project."
+            position="bottom-right"
+            size="md"
+          /> */}
+
+          {/* <WhatsAppSimple phoneNumber="+94776847372" message="Hi! I saw your portfolio and would like to discuss a project." /> */}
+
+          <WhatsAppButtonAdvanced
+            phoneNumber="+94776847372"
+            businessName="Venuja Ranasinghe"
+            welcomeMessage="Hi! Thanks for visiting my portfolio. How can I help you?"
+            quickMessages={[
+              "I'd like to hire you for a project",
+              "Can we discuss your services?",
+              "I have a question about your work"
+            ]}
+          />
+
           <Clients />
 
           <Testimonials className="mt-24 sm:mt-32 lg:mt-40" client={{ name: "la_Venuja", logo: logoPhobiaDark }}>
@@ -71,5 +94,6 @@ export default function Home() {
         </>
       )}
     </main>
+
   )
 }
