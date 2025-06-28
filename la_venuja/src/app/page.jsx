@@ -121,7 +121,7 @@ export default function Home() {
           </Container>
 
           <WhatsAppButtonAdvanced
-            phoneNumber="+94776847372"
+            phoneNumber="+94729847372"
             businessName="Venuja Ranasinghe"
             welcomeMessage="Hi! Thanks for visiting my portfolio. How can I help you?"
             quickMessages={[
