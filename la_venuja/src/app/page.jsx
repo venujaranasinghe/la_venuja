@@ -13,6 +13,7 @@ import TypingAnimation from "@/components/TypingAnimation"
 import SplashScreen from "@/components/SplashScreen"
 import WhatsAppButtonAdvanced from "@/components/whatsapp-button-advanced"
 import LiveClock from "@/components/live-clock"
+//import LoadingManager from "@/components/loading-manager"
 
 export default function Home() {
   const [showSplash, setShowSplash] = useState(true)
