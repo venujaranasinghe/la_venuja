@@ -12,6 +12,7 @@ import logoPhobiaDark from "@/images/clients/green-life/logo-dark.svg"
 import TypingAnimation from "@/components/TypingAnimation"
 import SplashScreen from "@/components/SplashScreen"
 import WhatsAppButtonAdvanced from "@/components/whatsapp-button-advanced"
+import LiveClock from "@/components/live-clock"
 
 export default function Home() {
   const [showSplash, setShowSplash] = useState(true)
@@ -27,6 +28,7 @@ export default function Home() {
       ) : (
         <>
           <Container className="mt-24 sm:mt-32">
+            <LiveClock />
             <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20 items-center">
               <FadeIn className="max-w-3xl">
                 <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
