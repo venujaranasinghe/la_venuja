@@ -15,6 +15,7 @@ import WhatsAppButtonAdvanced from "@/components/whatsapp-button-advanced"
 import LiveClock from "@/components/live-clock"
 //import LoadingManager from "@/components/loading-manager"
 
+import ParticlesBackground from "@/components/ParticlesBackground"
 //import AnimatedStats from "@/components/AnimatedStats"
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
 
   return (
     <main className="text-black">
+      <ParticlesBackground />
       {showSplash ? (
         <SplashScreen onComplete={handleSplashComplete} />
       ) : (
