@@ -16,6 +16,7 @@ import LiveClock from "@/components/live-clock"
 //import LoadingManager from "@/components/loading-manager"
 
 import ParticlesBackground from "@/components/ParticlesBackground"
+//import FloatingNav from "@/components/FloatingNav"
 //import AnimatedStats from "@/components/AnimatedStats"
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
   return (
     <main className="text-black">
       <ParticlesBackground />
+      {/* <FloatingNav /> */}
       {showSplash ? (
         <SplashScreen onComplete={handleSplashComplete} />
       ) : (
