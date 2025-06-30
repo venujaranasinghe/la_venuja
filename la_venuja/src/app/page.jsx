@@ -15,6 +15,8 @@ import WhatsAppButtonAdvanced from "@/components/whatsapp-button-advanced"
 import LiveClock from "@/components/live-clock"
 //import LoadingManager from "@/components/loading-manager"
 
+//import AnimatedStats from "@/components/AnimatedStats"
+
 export default function Home() {
   const [showSplash, setShowSplash] = useState(true)
 
@@ -133,6 +135,8 @@ export default function Home() {
               "I have a question about your work",
             ]}
           />
+
+          {/* <AnimatedStats /> */}
 
           <Clients />
 
