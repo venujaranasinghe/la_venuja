@@ -1,5 +1,6 @@
 import RootLayout from "@/components/RootLayout";
 import { SpeedInsights } from '@vercel/speed-insights/next';
+//import { Inter } from "next/font/google";
 import "./globals.css";
 
 export const metadata = {
@@ -8,6 +9,12 @@ export const metadata = {
     default: "Venuja Ranasinghe",
   },
 };
+
+// const inter = Inter({
+//   subsets: ["latin"],
+//   weight: ["400", "700"], // optional
+//   display: "swap",
+// });
 
 export default function Layout({ children }) {
   return (
