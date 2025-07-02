@@ -48,7 +48,7 @@ export default function Home() {
                   solving real-world problems through technology.
                 </p>
                 <a
-                  href="/assets/sample-cv.pdf"
+                  href="/assets/Venuja_Ranasinghe_Resume.pdf"
                   download
                   className="group relative mt-8 inline-flex items-center gap-2 rounded-full bg-neutral-950 px-6 py-3 text-sm font-medium text-white transition-transform duration-300 hover:scale-105 hover:bg-opacity-90"
                 >
