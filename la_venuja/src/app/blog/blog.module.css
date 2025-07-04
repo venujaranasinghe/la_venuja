@@ -1,155 +1,103 @@
 .container {
-    min-height: 100vh;
-    background-color: #ffffff;
-  }
-  
-  .wrapper {
-    max-width: 1152px;
-    margin: 0 auto;
-    padding: 3rem 1rem;
-  }
-  
-  .header {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  
-  .title {
-    font-size: 2.25rem;
-    font-weight: 700;
-    color: #111827;
-    margin-bottom: 1rem;
-  }
-  
-  .subtitle {
-    font-size: 1.125rem;
-    color: #6b7280;
-    max-width: 32rem;
-    margin: 0 auto;
-    line-height: 1.75;
-  }
-  
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.wrapper {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+  max-width: 32rem;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
   .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  @media (min-width: 768px) {
-    .grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  @media (min-width: 1024px) {
-    .grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
-  .cardLink {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .card {
-    background-color: white;
-    border-radius: 0.5rem;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    border: 1px solid #e5e7eb;
-    overflow: hidden;
-    transition: all 0.3s ease;
-  }
-  
-  .card:hover {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    border-color: #d1d5db;
-  }
-  
-  .imageContainer {
-    aspect-ratio: 16 / 9;
-    background-color: #f3f4f6;
-    overflow: hidden;
-  }
-  
-  .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover .image {
-    transform: scale(1.05);
-  }
-  
-  .content {
-    padding: 1.5rem;
-  }
-  
-  .meta {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.75rem;
-  }
-  
-  .category {
-    display: inline-block;
-    padding: 0.25rem 0.75rem;
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: #475569;
-    background-color: #f1f5f9;
-    border-radius: 9999px;
-  }
-  
-  .readTime {
-    font-size: 0.875rem;
-    color: #6b7280;
-  }
-  
-  .cardTitle {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #111827;
-    margin-bottom: 0.75rem;
-    line-height: 1.5;
-    transition: color 0.3s ease;
-  }
-  
-  .card:hover .cardTitle {
-    color: #475569;
-  }
-  
-  .excerpt {
-    color: #6b7280;
-    font-size: 0.875rem;
-    line-height: 1.625;
-    margin-bottom: 1rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-  
-  .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 0.875rem;
-  }
-  
-  .date {
-    color: #6b7280;
-  }
-  
-  .readMore {
-    color: #475569;
-    transition: color 0.3s ease;
-  }
-  
-  .card:hover .readMore {
-    color: #1e293b;
-  }
-  
+}
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-color: #d1d5db;
+  transform: translateY(-2px);
+}
+
+.imageContainer {
+  aspect-ratio: 16 / 9;
+  background-color: #f3f4f6;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+  margin: 0;
+}
+
+.card:hover .cardTitle {
+  color: #475569;
+}
