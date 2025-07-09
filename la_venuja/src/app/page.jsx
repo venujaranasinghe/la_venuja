@@ -1,5 +1,4 @@
 "use client"
-
 import { useState } from "react"
 import Clients from "@/components/Clients"
 import ContactSection from "@/components/ContactSection"
@@ -9,27 +8,25 @@ import Services from "@/components/Services"
 import Testimonials from "@/components/Testimonials"
 import logoPhobiaDark from "@/images/clients/green-life/logo-dark.svg"
 import TypingAnimation from "@/components/TypingAnimation"
-import LoadingScreen from "@/components/loading-screen"
+import SplashScreen from "@/components/SplashScreen"
 import WhatsAppButtonAdvanced from "@/components/whatsapp-button-advanced"
 import LiveClock from "@/components/live-clock"
-//import LoadingManager from "@/components/loading-manager"
 import ParticlesBackground from "@/components/ParticlesBackground"
-//import FloatingNav from "@/components/FloatingNav"
-//import AnimatedStats from "@/components/AnimatedStats"
 
 export default function Home() {
-  const [showLoading, setShowLoading] = useState(true)
+  const [showSplash, setShowSplash] = useState(true)
 
-  const handleLoadingComplete = () => {
-    setShowLoading(false)
+  const handleSplashComplete = () => {
+    setShowSplash(false)
   }
 
   return (
     <main className="text-black">
-      <ParticlesBackground />
-      {/* <FloatingNav /> */}
-      {showLoading ? (
-        <LoadingScreen onComplete={handleLoadingComplete} />
+      {/* Hide particles background during splash */}
+      {!showSplash && <ParticlesBackground />}
+
+      {showSplash ? (
+        <SplashScreen onComplete={handleSplashComplete} />
       ) : (
         <>
           <Container className="mt-24 sm:mt-32">
@@ -132,7 +129,6 @@ export default function Home() {
             ]}
           />
 
-          {/* <AnimatedStats /> */}
           <Clients />
           <Testimonials className="mt-24 sm:mt-32 lg:mt-40" client={{ name: "la_Venuja", logo: logoPhobiaDark }}>
             I&apos;m currently available to take on new projects, so feel free to send me a message about anything that
