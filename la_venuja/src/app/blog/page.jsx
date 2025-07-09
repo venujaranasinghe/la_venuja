@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import PageIntro from "@/components/PageIntro"
+import ParticlesBackground from "@/components/ParticlesBackground"
 
 export default function BlogPage() {
   // Blog posts data
@@ -27,6 +28,7 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <ParticlesBackground />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header */}
         <div className="text-center mb-16">
