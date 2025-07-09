@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import Values from "@/components/Values"
 import { ExternalLink, Award, Calendar, Hash } from "lucide-react"
+import ParticlesBackground from "@/components/ParticlesBackground"
 
 const CertificateCard = ({ certificate, index }) => {
   return (
@@ -16,6 +17,7 @@ const CertificateCard = ({ certificate, index }) => {
       viewport={{ once: true }}
       className="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-2xl hover:border-gray-200 transition-all duration-500"
     >
+      <ParticlesBackground />
       <div className="lg:flex">
         <div className="lg:w-2/5 relative h-64 lg:h-auto overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-50 opacity-50 z-10"></div>
