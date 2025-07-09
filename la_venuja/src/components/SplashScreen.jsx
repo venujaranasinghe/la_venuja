@@ -1,4 +1,5 @@
 "use client"
+
 import { useEffect, useState } from "react"
 
 export default function SplashScreen({ onComplete }) {
@@ -7,9 +8,6 @@ export default function SplashScreen({ onComplete }) {
   const [loadingProgress, setLoadingProgress] = useState(0)
 
   useEffect(() => {
-    // Hide body scroll when splash is active
-    document.body.style.overflow = "hidden"
-
     // Animation phases
     const timer1 = setTimeout(() => setAnimationPhase(1), 500)
     const timer2 = setTimeout(() => setAnimationPhase(2), 1200)
@@ -39,8 +37,6 @@ export default function SplashScreen({ onComplete }) {
       clearTimeout(timer4)
       clearTimeout(autoComplete)
       clearInterval(progressInterval)
-      // Restore body scroll
-      document.body.style.overflow = "unset"
     }
   }, [])
 
@@ -86,12 +82,14 @@ export default function SplashScreen({ onComplete }) {
               <span className="last-name">RANASINGHE</span>
             </h1>
           </div>
+
           <div className={`role-container ${animationPhase >= 3 ? "show" : ""}`}>
             <div className="typing-animation">
               <span className="role-text">Full Stack Developer</span>
               <span className="cursor">|</span>
             </div>
           </div>
+
           <div className={`tagline ${animationPhase >= 4 ? "show" : ""}`}>
             <p>Crafting Digital Experiences</p>
           </div>
@@ -150,21 +148,9 @@ export default function SplashScreen({ onComplete }) {
           display: flex;
           align-items: center;
           justify-content: center;
-          z-index: 999999; /* Increased z-index */
+          z-index: 99999;
           overflow: hidden;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
-        
-        /* Add backdrop to ensure nothing shows behind */
-        .splash-container::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: #0a0a0a;
-          z-index: -1;
         }
 
         .splash-container::before {
@@ -178,7 +164,6 @@ export default function SplashScreen({ onComplete }) {
           z-index: -1;
         }
 
-        /* Rest of your existing styles... */
         .background-layer {
           position: absolute;
           width: 100%;
@@ -597,13 +582,13 @@ export default function SplashScreen({ onComplete }) {
         }
 
         @keyframes particleFloat {
-          0%, 100% {
-             opacity: 0.2;
-             transform: translateY(0px) scale(1);
+          0%, 100% { 
+            opacity: 0.2; 
+            transform: translateY(0px) scale(1);
           }
-          50% {
-             opacity: 0.8;
-             transform: translateY(-15px) scale(1.2);
+          50% { 
+            opacity: 0.8; 
+            transform: translateY(-15px) scale(1.2);
           }
         }
 
