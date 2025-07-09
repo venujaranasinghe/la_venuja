@@ -2,10 +2,12 @@ import ContactDetails from "@/components/ContactDetails";
 import ContactForm from "@/components/ContactForm";
 import Container from "@/components/Container";
 import PageIntro from "@/components/PageIntro";
+import ParticlesBackground from "@/components/ParticlesBackground";
 
 const ContactPage = () => {
   return (
     <>
+      <ParticlesBackground />
       <PageIntro eyebrow="Contact me" title="Let’s work together">
         <p>I can not wait to hear from you.</p>
       </PageIntro>
