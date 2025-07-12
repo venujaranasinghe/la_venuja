@@ -1,4 +1,4 @@
-# Personal Portfolio - Venuja
+# Personal Portfolio Website - Venuja
 
 A modern, responsive personal portfolio website built with Next.js, featuring a splash screen, typing animations, and smooth transitions.
 
