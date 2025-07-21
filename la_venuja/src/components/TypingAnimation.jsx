@@ -6,16 +6,10 @@ import { useEffect, useState } from 'react';
 export default function TypingAnimation() {
   const greetings = [
     "Hello there!", // English
-    "Hola!",        // Spanish
-    "Bonjour!",     // French
-    "Hallo!",       // German
-    "Ciao!",        // Italian
+    // "Hola!",        // Spanish
+    // "Bonjour!",     // French
+    // "Ciao!",        // Italian
     "ආයුබෝවන්!",     // Sri Lanka
-    "こんにちは!",   // Japanese (Konnichiwa)
-    "안녕하세요!",   // Korean (Annyeonghaseyo)
-    "你好!",         // Chinese (Nǐ hǎo)
-    "नमस्ते!",       // Hindi (Namaste)
-    "Привет!",      // Russian (Privet)
   ];
 
   const [displayedText, setDisplayedText] = useState('');

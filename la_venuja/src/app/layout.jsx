@@ -1,6 +1,5 @@
 import RootLayout from "@/components/RootLayout";
 import { SpeedInsights } from '@vercel/speed-insights/next';
-//import { Inter } from "next/font/google";
 import "./globals.css";
 
 export const metadata = {
@@ -10,19 +9,13 @@ export const metadata = {
   },
 };
 
-// const inter = Inter({
-//   subsets: ["latin"],
-//   weight: ["400", "700"], // optional
-//   display: "swap",
-// });
-
 export default function Layout({ children }) {
   return (
     <html
       lang="en"
       className="h-full bg-neutral-950 text-base antialiased text-neutral-100"
     >
-      <body className="flex min-h-full flex-col">
+      <body className="flex min-h-full flex-col font-sf-pro">
         <RootLayout>{children}</RootLayout>
         <SpeedInsights />
       </body>
