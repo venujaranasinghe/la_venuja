@@ -9,7 +9,7 @@ const educationData = [
     id: 1,
     institution: "Sri Lanka Institute of Information Technology (SLIIT)",
     degree: "Bachelor of Science in Computer Science",
-    period: "2022 - Present",
+    period: "2023 - Present",
     status: "Undergraduate",
     description:
       "Specializing in software development, algorithms, and modern web technologies. Actively engaged in practical projects and innovative solutions.",
