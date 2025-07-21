@@ -1,23 +1,19 @@
 "use client"
 
 import { useState } from "react"
-
 import Clients from "@/components/Clients"
 import ContactSection from "@/components/ContactSection"
 import Container from "@/components/Container"
 import FadeIn from "@/components/FadeIn"
 import Services from "@/components/Services"
 import Testimonials from "@/components/Testimonials"
+import Education from "@/components/Education"
 import logoPhobiaDark from "@/images/clients/green-life/logo-dark.svg"
 import TypingAnimation from "@/components/TypingAnimation"
 import SplashScreen from "@/components/SplashScreen"
 import WhatsAppButtonAdvanced from "@/components/whatsapp-button-advanced"
 import LiveClock from "@/components/live-clock"
-//import LoadingManager from "@/components/loading-manager"
-
 import ParticlesBackground from "@/components/ParticlesBackground"
-//import FloatingNav from "@/components/FloatingNav"
-//import AnimatedStats from "@/components/AnimatedStats"
 
 export default function Home() {
   const [showSplash, setShowSplash] = useState(true)
@@ -29,7 +25,6 @@ export default function Home() {
   return (
     <main className="text-black">
       <ParticlesBackground />
-      {/* <FloatingNav /> */}
       {showSplash ? (
         <SplashScreen onComplete={handleSplashComplete} />
       ) : (
@@ -68,14 +63,12 @@ export default function Home() {
                   </svg>
                 </a>
               </FadeIn>
-
               <FadeIn className="relative flex justify-center lg:justify-end">
                 <div className="relative group">
                   {/* Animated rotating border */}
                   <div className="absolute inset-0 rounded-full bg-gradient-to-r from-black via-gray-500 to-black p-1 animate-spin-slow">
                     <div className="h-full w-full rounded-full bg-white"></div>
                   </div>
-
                   {/* Main image container with hexagonal clip */}
                   <div className="relative z-10 w-80 h-80 lg:w-96 lg:h-96">
                     {/* Hexagonal image */}
@@ -95,32 +88,28 @@ export default function Home() {
                       />
                     </div>
                   </div>
-
                   {/* Floating geometric elements */}
                   <div className="absolute -top-8 -left-8 w-16 h-16 border-2 border-black transform rotate-45 animate-pulse"></div>
                   <div className="absolute -bottom-6 -right-6 w-12 h-12 bg-black transform rotate-12 animate-bounce"></div>
                   <div className="absolute top-1/2 -left-12 w-8 h-8 border-2 border-gray-400 rounded-full animate-ping"></div>
-
                   {/* Professional grid overlay */}
                   <div className="absolute inset-0 opacity-10 pointer-events-none">
                     <div
                       className="w-full h-full"
                       style={{
                         backgroundImage: `
-                        linear-gradient(to right, black 1px, transparent 1px),
-                        linear-gradient(to bottom, black 1px, transparent 1px)
-                      `,
+                          linear-gradient(to right, black 1px, transparent 1px),
+                          linear-gradient(to bottom, black 1px, transparent 1px)
+                        `,
                         backgroundSize: "20px 20px",
                       }}
                     ></div>
                   </div>
-
                   {/* Stylish corner brackets */}
                   <div className="absolute -top-4 -left-4 w-8 h-8 border-l-2 border-t-2 border-black"></div>
                   <div className="absolute -top-4 -right-4 w-8 h-8 border-r-2 border-t-2 border-black"></div>
                   <div className="absolute -bottom-4 -left-4 w-8 h-8 border-l-2 border-b-2 border-black"></div>
                   <div className="absolute -bottom-4 -right-4 w-8 h-8 border-r-2 border-b-2 border-black"></div>
-
                   {/* Professional shadow layers */}
                   <div className="absolute inset-0 bg-black opacity-20 transform translate-x-4 translate-y-4 -z-10 rounded-full blur-xl"></div>
                   <div className="absolute inset-0 bg-gray-600 opacity-10 transform translate-x-8 translate-y-8 -z-20 rounded-full blur-2xl"></div>
@@ -140,17 +129,15 @@ export default function Home() {
             ]}
           />
 
-          {/* <AnimatedStats /> */}
+          {/* Add Education section here */}
+          <Education />
 
           <Clients />
-
           <Testimonials className="mt-24 sm:mt-32 lg:mt-40" client={{ name: "la_Venuja", logo: logoPhobiaDark }}>
             I&apos;m currently available to take on new projects, so feel free to send me a message about anything that
             you want me to work on. You can contact anytime.
           </Testimonials>
-
           <Services />
-
           <ContactSection />
         </>
       )}
