@@ -90,7 +90,7 @@ const Navigation = () => {
                 <NavigationItem href="/about">About Me</NavigationItem>
             </NavigationRow>
             <NavigationRow>
-                <NavigationItem href="/process">Education</NavigationItem>
+                <NavigationItem href="/process">Certifications</NavigationItem>
                 <NavigationItem href="/blog">Blog</NavigationItem>
             </NavigationRow>
         </nav>
