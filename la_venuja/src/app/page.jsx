@@ -129,15 +129,17 @@ export default function Home() {
             ]}
           />
 
-          {/* Add Education section here */}
-          <Education />
-
           <Clients />
+          
           <Testimonials className="mt-24 sm:mt-32 lg:mt-40" client={{ name: "la_Venuja", logo: logoPhobiaDark }}>
             I&apos;m currently available to take on new projects, so feel free to send me a message about anything that
             you want me to work on. You can contact anytime.
           </Testimonials>
+
           <Services />
+          {/* Add Education section here */}
+          <Education />
+
           <ContactSection />
         </>
       )}

@@ -7,41 +7,31 @@ import FadeIn from "@/components/FadeIn"
 const educationData = [
   {
     id: 1,
-    institution: "Sri Lanka Institute of Information Technology (SLIIT)",
-    degree: "Bachelor of Science in Computer Science",
-    period: "2023 - Present",
+    institution: "Bachelor of Science in Computer Science",
+    degree: "Sri Lanka Institute of Information Technology (SLIIT)",
+    period: "2022 - Present",
     status: "Undergraduate",
     description:
       "Specializing in software development, algorithms, and modern web technologies. Actively engaged in practical projects and innovative solutions.",
-    achievements: [
-      "Dean's List Recognition",
-      "Active member of Computer Science Society",
-      "Participated in hackathons and coding competitions",
-    ],
-    gpa: "3.8/4.0",
     logo: "🎓",
   },
   {
     id: 2,
-    institution: "Advanced Level Education",
-    degree: "Physical Science Stream",
-    period: "2020 - 2021",
+    institution: "Secondary Education",
+    degree: "Kingswood College, Kandy",
+    period: "2029 - 2021",
     status: "Completed",
     description:
-      "Focused on Mathematics, Physics, and Chemistry with strong analytical and problem-solving foundation.",
-    achievements: ["Mathematics: A", "Physics: A", "Chemistry: B"],
-    gpa: "3 A's",
+      "Physical Science Stream",
     logo: "📚",
   },
   {
     id: 3,
-    institution: "Ordinary Level Education",
-    degree: "General Education",
-    period: "2015 - 2019",
+    institution: "Primary Education",
+    degree: "Kingswood College, Kandy",
+    period: "2008 - 2018",
     status: "Completed",
-    description: "Comprehensive secondary education with excellent performance in core subjects.",
-    achievements: ["9 A's including Mathematics and Science", "School Prefect", "Science Club President"],
-    gpa: "9 A's",
+    description: "",
     logo: "🏫",
   },
 ]
@@ -112,27 +102,6 @@ export default function Education() {
 
                       <p className="text-neutral-600 mb-6 leading-relaxed">{education.description}</p>
 
-                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                        <div>
-                          <h4 className="font-semibold text-neutral-950 mb-3">Key Achievements</h4>
-                          <ul className="space-y-2">
-                            {education.achievements.map((achievement, idx) => (
-                              <li key={idx} className="flex items-center gap-2 text-neutral-600">
-                                <div className="w-1.5 h-1.5 bg-neutral-950 rounded-full"></div>
-                                {achievement}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-
-                        <div className="flex items-center justify-center lg:justify-end">
-                          <div className="text-center">
-                            <p className="text-sm text-neutral-500 mb-1">Performance</p>
-                            <p className="text-2xl font-bold text-neutral-950">{education.gpa}</p>
-                          </div>
-                        </div>
-                      </div>
-
                       {/* Hover effect gradient */}
                       <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-neutral-950/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                     </div>
@@ -143,7 +112,7 @@ export default function Education() {
           </div>
         </div>
 
-        {/* Skills gained section */}
+        {/* Skills gained section
         <FadeIn className="mt-16">
           <div className="rounded-2xl bg-neutral-950 p-8 text-white">
             <h3 className="font-display text-2xl font-semibold mb-6">Skills & Knowledge Gained</h3>
@@ -167,7 +136,7 @@ export default function Education() {
               ))}
             </div>
           </div>
-        </FadeIn>
+        </FadeIn> */}
       </Container>
     </section>
   )
