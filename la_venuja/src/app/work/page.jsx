@@ -143,12 +143,41 @@ const WorkPage = () => {
     {
       id: 6,
       title: "The Book I Never Wrote",
-      description: "This is the book I never plan to write in a amazing web experience",
+      description: "A poetic, interactive web experience that imagines the pages of a book that was never written. Crafted with React and Spring Boot, it blends storytelling with sleek, responsive design to evoke emotion and curiosity.",
       tags: ["React", "Springboot"],
       imageUrl: "/8.png",
       projectUrl: "https://the-book-i-never-wrote.vercel.app/",
       githubUrl: "https://github.com/venujaranasinghe/",
     },
+    {
+      id: 7,
+      title: "Personal Portfolio Website for a SE",
+      description: "A sleek and responsive portfolio built for a professional software engineer to showcase their technical skills, projects, and experience. Designed with React for an interactive UI and powered by modern styling techniques to leave a lasting impression.",
+      tags: ["React", "Tailwind CSS"],
+      imageUrl: "/10.png",
+      projectUrl: "https://shenal-silva-portfolio.vercel.app/",
+      githubUrl: "https://github.com/venujaranasinghe/Shenal-Silva-Portfolio",
+    },
+    {
+      id: 8,
+      title: "UI/UX Designer Portfolio Website",
+      description: "A visually striking and minimalist portfolio crafted for a UI/UX designer to showcase case studies, design philosophy, and interactive prototypes. Built with React and Tailwind CSS to highlight creativity through clean layouts, smooth animations, and user-centric design.",
+      tags: ["React", "Tailwind CSS", "Framer Motion"],
+      imageUrl: "/11.png",
+      projectUrl: "https://vidaththeekshana.vercel.app/",
+      githubUrl: "https://github.com/venujaranasinghe/Vidath-Portfolio",
+    },
+    {
+      id: 9,
+      title: "DevBeta – Full-Stack Developer Portfolio (Beta)",
+      description: "A functional beta portfolio tailored for a full-stack developer, featuring a clean layout to highlight core projects, tech stack, and developer journey. Built with React on the frontend and integrated with a Node.js/Express backend, this version focuses on structure, responsiveness, and backend connectivity as a foundation for future enhancements.",
+      tags: ["React", "Node.js", "Express", "MongoDB"],
+      imageUrl: "/9.png",
+      projectUrl: "https://fullstack-developer-portfolio-beta.vercel.app/",
+      githubUrl: "https://github.com/venujaranasinghe/Fullstack-Developer-Portfolio",
+    },
+
+
   ]
 
   const controls = useAnimation()
