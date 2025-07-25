@@ -96,7 +96,7 @@ const WorkPage = () => {
       description:
         "Built with React.js and Vite, highlights my projects, skills, and experience through a fast, responsive, and modern design. Features smooth animations and optimized performance.",
       tags: ["React", "Vite", "CSS", "JavaScript"],
-      imageUrl: "/images/project-1.png",
+      imageUrl: "/1.png",
       projectUrl: "https://venujaranasinghe.github.io/portfolio-react/",
       githubUrl: "https://github.com/venujaranasinghe/portfolio-react",
     },
@@ -106,7 +106,7 @@ const WorkPage = () => {
       description:
         "A comprehensive admin dashboard for a floral shop, built with Spring Boot, enabling order management, inventory tracking, and customer interactions with real-time analytics.",
       tags: ["Java", "Thymeleaf", "Spring Boot", "MySQL"],
-      imageUrl: "/images/project-2.png",
+      imageUrl: "/3.png",
       projectUrl: "https://github.com/venujaranasinghe/OOAD-Group-Assignment",
       githubUrl: "https://github.com/venujaranasinghe/OOAD-Group-Assignment",
     },
@@ -116,7 +116,7 @@ const WorkPage = () => {
       description:
         "An intuitive admin dashboard for the blog app, providing efficient post management, user controls, and analytics for streamlined content moderation with modern UI/UX.",
       tags: ["React", "MongoDB", "Node.js", "Express", "Tailwind"],
-      imageUrl: "/images/project-3.png",
+      imageUrl: "/4.png",
       projectUrl: "https://full-stack-blog-lake.vercel.app/login",
       githubUrl: "https://github.com/venujaranasinghe/FullStack-Blog",
     },
@@ -126,7 +126,7 @@ const WorkPage = () => {
       description:
         "A feature-rich blog app built with Next.js and MongoDB, offering seamless content management, dynamic posts, and a smooth user experience with server-side rendering.",
       tags: ["Next.js", "MongoDB", "Tailwind", "Vercel"],
-      imageUrl: "/images/project-4.png",
+      imageUrl: "/5.png",
       projectUrl: "https://github.com/venujaranasinghe/FullStack-Blog",
       githubUrl: "https://github.com/venujaranasinghe/FullStack-Blog",
     },
@@ -136,7 +136,7 @@ const WorkPage = () => {
       description:
         "A visually engaging portfolio with smooth 3D animations, built using React.js and Three.js for an immersive experience. Features interactive 3D models and particle systems.",
       tags: ["React", "Three.js", "Framer Motion", "Tailwind"],
-      imageUrl: "/images/project-5.png",
+      imageUrl: "/7.png",
       projectUrl: "https://venuja-ranasinghe.vercel.app/",
       githubUrl: "https://github.com/venujaranasinghe/3d-animated-portfolio",
     },
@@ -145,7 +145,7 @@ const WorkPage = () => {
       title: "The Book I Never Wrote",
       description: "This is the book I never plan to write in a amazing web experience",
       tags: ["React", "Springboot"],
-      imageUrl: "/images/project-6.png",
+      imageUrl: "/8.png",
       projectUrl: "https://the-book-i-never-wrote.vercel.app/",
       githubUrl: "https://github.com/venujaranasinghe/",
     },
