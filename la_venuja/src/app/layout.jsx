@@ -45,7 +45,6 @@ export const metadata = {
     title: 'Venuja Ranasinghe - Full Stack Developer & Computer Science Student',
     description: 'Explore the portfolio of Venuja Ranasinghe, a Computer Science student specializing in full-stack development and machine learning.',
     images: ['/profile.jpg'],
-    creator: '@your_twitter_handle', // Replace with your actual Twitter handle
   },
   alternates: {
     canonical: 'https://la-venuja.vercel.app/',
@@ -73,8 +72,7 @@ export default function Layout({ children }) {
               "image": "https://la-venuja.vercel.app/profile.jpg",
               "sameAs": [
                 "https://github.com/venujaranasinghe",
-                "https://www.linkedin.com/in/venuja-ranasinghe/", // Add your LinkedIn
-                "https://twitter.com/your-handle" // Add your Twitter if you have one
+                "https://www.linkedin.com/in/venuja-ranasinghe/"
               ],
               "knowsAbout": ["Web Development", "Machine Learning", "React", "Next.js", "Python", "Java", "JavaScript", "Full Stack Development"],
               "alumniOf": {
