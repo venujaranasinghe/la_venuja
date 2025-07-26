@@ -58,7 +58,7 @@ const ProcessPage = () => {
     {
       id: 6,
       title: "Web Design for Beginners",
-      imageUrl: "/c4.png",
+      imageUrl: "/c6.png",
     },
     {
       id: 7,
@@ -74,6 +74,11 @@ const ProcessPage = () => {
       id: 9,
       title: "Artificial Intelligence Foundations: Neural Networks",
       imageUrl: "/c9.png",
+    },
+    {
+      id: 10,
+      title: "Java for Beginners",
+      imageUrl: "/c10.png",
     },
   ]
 
