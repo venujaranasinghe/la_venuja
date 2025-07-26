@@ -58,6 +58,9 @@ export default function Layout({ children }) {
       className="h-full bg-neutral-950 text-base antialiased text-neutral-100"
     >
       <head>
+        {/* Google Site Verification */}
+        <meta name="google-site-verification" content="oDw36Oa6W_II-VHZc_qLi2S_7bDBdr7xte1tQfSZ-d0" />
+        
         {/* Schema.org structured data */}
         <script
           type="application/ld+json"
