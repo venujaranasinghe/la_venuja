@@ -1,6 +1,7 @@
 "use client"
 
 import PageIntro from "@/components/PageIntro"
+import ProjectStructuredData from "@/components/ProjectStructuredData"
 import { useEffect } from "react"
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
@@ -204,6 +205,7 @@ const WorkPage = () => {
 
   return (
     <>
+      <ProjectStructuredData projects={projects} />
       <PageIntro eyebrow="My Work" title="Crafting Digital Experiences Through Code">
         <p className="text-lg text-gray-600 leading-relaxed">
           Here's a curated selection of projects I've worked on recently. Each one represents a unique challenge and

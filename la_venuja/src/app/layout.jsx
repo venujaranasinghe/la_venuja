@@ -3,9 +3,52 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import "./globals.css";
 
 export const metadata = {
+  metadataBase: new URL('https://la-venuja.vercel.app/'), // Replace with your actual domain
   title: {
-    template: "la_venuja",
-    default: "Venuja Ranasinghe",
+    template: "%s | Venuja Ranasinghe - Full Stack Developer",
+    default: "Venuja Ranasinghe - Full Stack Developer & Computer Science Student",
+  },
+  description: "Venuja Ranasinghe is an undergraduate Computer Science student at SLIIT specializing in full-stack development, machine learning, and innovative web solutions. Explore my portfolio of projects and get in touch for collaborations.",
+  keywords: ["Venuja Ranasinghe", "Full Stack Developer", "Computer Science", "SLIIT", "Web Development", "Machine Learning", "React", "Next.js", "Portfolio"],
+  authors: [{ name: "Venuja Ranasinghe" }],
+  creator: "Venuja Ranasinghe",
+  publisher: "Venuja Ranasinghe",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://la-venuja.vercel.app/',
+    title: 'Venuja Ranasinghe - Full Stack Developer & Computer Science Student',
+    description: 'Explore the portfolio of Venuja Ranasinghe, a Computer Science student at SLIIT specializing in full-stack development and machine learning.',
+    siteName: 'Venuja Ranasinghe Portfolio',
+    images: [
+      {
+        url: '/profile.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Venuja Ranasinghe - Full Stack Developer',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Venuja Ranasinghe - Full Stack Developer & Computer Science Student',
+    description: 'Explore the portfolio of Venuja Ranasinghe, a Computer Science student specializing in full-stack development and machine learning.',
+    images: ['/profile.jpg'],
+    creator: '@your_twitter_handle', // Replace with your actual Twitter handle
+  },
+  alternates: {
+    canonical: 'https://la-venuja.vercel.app/',
   },
 };
 
@@ -16,6 +59,39 @@ export default function Layout({ children }) {
       className="h-full bg-neutral-950 text-base antialiased text-neutral-100"
     >
       <head>
+        {/* Schema.org structured data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Venuja Ranasinghe",
+              "jobTitle": "Computer Science Student & Full Stack Developer",
+              "description": "Undergraduate Computer Science student at SLIIT with expertise in full-stack development, machine learning, and innovative web solutions.",
+              "url": "https://la-venuja.vercel.app/",
+              "image": "https://la-venuja.vercel.app/profile.jpg",
+              "sameAs": [
+                "https://github.com/venujaranasinghe",
+                "https://www.linkedin.com/in/venuja-ranasinghe/", // Add your LinkedIn
+                "https://twitter.com/your-handle" // Add your Twitter if you have one
+              ],
+              "knowsAbout": ["Web Development", "Machine Learning", "React", "Next.js", "Python", "Java", "JavaScript", "Full Stack Development"],
+              "alumniOf": {
+                "@type": "EducationalOrganization",
+                "name": "Sri Lanka Institute of Information Technology (SLIIT)"
+              },
+              "hasOccupation": {
+                "@type": "Occupation",
+                "name": "Full Stack Developer",
+                "occupationLocation": {
+                  "@type": "Country",
+                  "name": "Sri Lanka"
+                }
+              }
+            })
+          }}
+        />
         {/* Inline CSS for immediate loading screen */}
         <style dangerouslySetInnerHTML={{
           __html: `

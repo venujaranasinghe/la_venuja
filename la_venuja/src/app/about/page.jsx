@@ -8,6 +8,16 @@ import Build from "@/components/Build";
 import Deliver from "@/components/Deliver";
 import ParticlesBackground from "@/components/ParticlesBackground";
 
+export const metadata = {
+  title: "About Me",
+  description: "Learn more about Venuja Ranasinghe - a Computer Science undergraduate at SLIIT with expertise in web development, machine learning, and programming. Discover my background, skills, and passion for technology.",
+  openGraph: {
+    title: "About Venuja Ranasinghe - Computer Science Student & Developer",
+    description: "Get to know Venuja Ranasinghe, a passionate Computer Science student at SLIIT with skills in web development, machine learning, and innovative problem-solving.",
+    url: "https://la-venuja.vercel.app/about",
+  },
+};
+
 const AboutPage = () => {
   return (
     <>
