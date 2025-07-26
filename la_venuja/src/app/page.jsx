@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Clients from "@/components/Clients"
 import ContactSection from "@/components/ContactSection"
 import Container from "@/components/Container"
@@ -17,9 +17,40 @@ import ParticlesBackground from "@/components/ParticlesBackground"
 
 export default function Home() {
   const [showSplash, setShowSplash] = useState(true)
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    // Hide initial loader once React has loaded
+    const hideInitialLoader = () => {
+      const initialLoader = document.getElementById("initial-loader")
+      if (initialLoader) {
+        initialLoader.style.opacity = "0"
+        setTimeout(() => {
+          initialLoader.style.display = "none"
+          setIsLoading(false)
+        }, 500)
+      }
+    }
+
+    // Check if page is already loaded
+    if (document.readyState === "complete") {
+      hideInitialLoader()
+    } else {
+      window.addEventListener("load", hideInitialLoader)
+    }
+
+    return () => {
+      window.removeEventListener("load", hideInitialLoader)
+    }
+  }, [])
 
   const handleSplashComplete = () => {
     setShowSplash(false)
+  }
+
+  // Don't render anything until initial loading is complete
+  if (isLoading) {
+    return null
   }
 
   return (
