@@ -10,13 +10,11 @@ import Testimonials from "@/components/Testimonials"
 import Education from "@/components/Education"
 import logoPhobiaDark from "@/images/clients/green-life/logo-dark.svg"
 import TypingAnimation from "@/components/TypingAnimation"
-import SplashScreen from "@/components/SplashScreen"
 import WhatsAppButtonAdvanced from "@/components/whatsapp-button-advanced"
 import LiveClock from "@/components/live-clock"
 import ParticlesBackground from "@/components/ParticlesBackground"
 
 export default function Home() {
-  const [showSplash, setShowSplash] = useState(true)
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
@@ -44,10 +42,6 @@ export default function Home() {
     }
   }, [])
 
-  const handleSplashComplete = () => {
-    setShowSplash(false)
-  }
-
   // Don't render anything until initial loading is complete
   if (isLoading) {
     return null
@@ -56,11 +50,7 @@ export default function Home() {
   return (
     <main className="text-black">
       <ParticlesBackground />
-      {showSplash ? (
-        <SplashScreen onComplete={handleSplashComplete} />
-      ) : (
-        <>
-          <Container className="mt-24 sm:mt-32">
+      <Container className="mt-24 sm:mt-32">
             <LiveClock />
             <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20 items-center">
               <FadeIn className="max-w-3xl">
@@ -172,8 +162,6 @@ export default function Home() {
           <Education />
 
           <ContactSection />
-        </>
-      )}
     </main>
   )
 }
