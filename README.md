@@ -8,7 +8,9 @@ A modern, responsive personal portfolio website built with Next.js, featuring a 
 - **Typing Animation**: Dynamic text animation showcasing multilingual greetings
 - **Responsive Design**: Fully responsive layout that works on all devices
 - **Modern UI**: Clean and professional interface with smooth transitions
+- **Whatsapp Button**: For direct contact with me or to discuss projects
 - **Performance Optimized**: Integrated with Vercel Speed Insights for optimal performance
+- **Search Engine Optimized**
 
 ## 🛠️ Technologies Used
 
