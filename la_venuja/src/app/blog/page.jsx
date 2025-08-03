@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import PageIntro from "@/components/PageIntro"
 import ParticlesBackground from "@/components/ParticlesBackground"
-import SectionIntro from "./SectionIntro";
+import SectionIntro from "@/components/SectionIntro";
 
 export default function BlogPage() {
   // Blog posts data
