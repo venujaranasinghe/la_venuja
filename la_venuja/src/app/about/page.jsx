@@ -24,7 +24,7 @@ const AboutPage = () => {
       <ParticlesBackground />
       <PageIntro eyebrow="About me" title="Who Am I">
         
-        <p>A Computer Science Undergraduate, Web Developer & Machine Learning Enthusiast</p> */}
+        {/* <p>A Computer Science Undergraduate, Web Developer & Machine Learning Enthusiast</p> */}
         {/* <div className="mt-10 flex flex-col lg:flex-row lg:gap-12 lg:items-start">
           <div className="max-w-2xl space-y-6 text-base lg:flex-1">
             <p>
@@ -42,7 +42,7 @@ const AboutPage = () => {
             </p>
           </div>
           
-        </div>
+        </div> */}
         
       </PageIntro>
       {/* Build */}
