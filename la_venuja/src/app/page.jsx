@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <main className="text-black" role="main">
       <ParticlesBackground />
-      
+
       {/* Hero Section */}
       <section aria-label="Introduction" className="relative">
         <Container className="mt-24 sm:mt-32">
@@ -160,11 +160,11 @@ export default function Home() {
       />
 
       <Clients />
-      
+
       <Testimonials className="mt-24 sm:mt-32 lg:mt-40" client={{ name: "la_Venuja", logo: logoPhobiaDark }}>
-        I&apos;m currently available to take on new projects, so feel free to send me a message about anything that
-        you want me to work on. You can contact anytime.
+        I believe great work comes from collaboration and curiosity. This portfolio is a window into what I’ve built—and a hint at what’s next. Ready to create something impactful?
       </Testimonials>
+
 
       <Services />
       <Education />
