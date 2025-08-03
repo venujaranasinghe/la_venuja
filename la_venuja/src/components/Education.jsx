@@ -2,6 +2,7 @@
 import { useState } from "react"
 import Container from "@/components/Container"
 import FadeIn from "@/components/FadeIn"
+import SectionIntro from "./SectionIntro";
 
 const educationData = [
   {
@@ -38,9 +39,20 @@ export default function Education() {
   const [activeCard, setActiveCard] = useState(null)
 
   return (
+    <>
+    <SectionIntro
+        eyebrow="Education"
+        title="My Educational Journey"
+        className="mt-24 sm:mt-32 lg:mt-40"
+      >
+        <p>
+        My academic path has been focused on building a strong foundation in computer science and developing the
+                skills needed to create innovative technological solutions.
+        </p>
+      </SectionIntro>
     <section className="mt-16 sm:mt-24 lg:mt-32">
       <Container>
-        <FadeIn>
+        {/* <FadeIn>
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="max-w-3xl">
               <h2 className="font-display text-2xl font-medium tracking-tight text-neutral-950 sm:text-3xl lg:text-4xl">
@@ -52,7 +64,7 @@ export default function Education() {
               </p>
             </div>
           </div>
-        </FadeIn>
+        </FadeIn> */}
 
         <div className="mt-12 sm:mt-16">
           <div className="relative">
@@ -119,5 +131,6 @@ export default function Education() {
         </div>
       </Container>
     </section>
+    </>
   )
 }
