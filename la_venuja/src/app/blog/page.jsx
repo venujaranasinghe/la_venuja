@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import PageIntro from "@/components/PageIntro"
 import ParticlesBackground from "@/components/ParticlesBackground"
+import SectionIntro from "./SectionIntro";
 
 export default function BlogPage() {
   // Blog posts data
@@ -27,16 +28,26 @@ export default function BlogPage() {
   ]
 
   return (
+    <>
+    <SectionIntro
+        eyebrow="Blog"
+        title="The latest articles and news"
+        className="mt-24 sm:mt-32 lg:mt-40"
+      >
+        <p>
+        Thoughts, insights, and experiences from my journey in technology and development.
+        </p>
+      </SectionIntro>
     <div className="min-h-screen bg-white">
       <ParticlesBackground />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Header */}
+        {/* Header
         <div className="text-center mb-16">
           <PageIntro eyebrow="Blog" title="The latest articles and news" />
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mt-6 leading-relaxed">
             Thoughts, insights, and experiences from my journey in technology and development.
           </p>
-        </div>
+        </div> */}
 
         {/* Blog Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -46,6 +57,7 @@ export default function BlogPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
