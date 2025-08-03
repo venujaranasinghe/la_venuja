@@ -80,6 +80,11 @@ const ProcessPage = () => {
       title: "Java for Beginners",
       imageUrl: "/c10.png",
     },
+    {
+      id: 2,
+      title: "Introduction to SQL",
+      imageUrl: "/c11.png",
+    },
   ]
 
   const containerVariants = {
