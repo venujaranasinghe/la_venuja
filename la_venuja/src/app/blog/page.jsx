@@ -58,7 +58,7 @@ export default function BlogPage() {
       </div>
     </div>
     </>
-  )
+  ) 
 } 
 
 function BlogCard({ post }) {
