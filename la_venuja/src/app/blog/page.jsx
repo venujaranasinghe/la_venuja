@@ -59,7 +59,7 @@ export default function BlogPage() {
     </div>
     </>
   )
-}
+} 
 
 function BlogCard({ post }) {
   return (
