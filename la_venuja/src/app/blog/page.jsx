@@ -29,7 +29,7 @@ export default function BlogPage() {
 
   return (
     <>
-    <SectionIntro
+    <SectionIntro n
         eyebrow="Blog"
         title="The latest articles and news"
         className="mt-24 sm:mt-32 lg:mt-40"
