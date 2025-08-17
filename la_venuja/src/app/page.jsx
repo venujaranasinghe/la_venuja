@@ -107,7 +107,7 @@ export default function Home() {
                     }}
                   >
                     <img
-                      src="/profile.jpg"
+                      src="/bg2.png"
                       alt="Venuja Ranasinghe - Computer Science Student and Full Stack Developer"
                       className="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-500"
                       style={{
