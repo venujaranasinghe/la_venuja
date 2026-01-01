@@ -1,5 +1,4 @@
 "use client"
-import { useState } from "react"
 import Container from "@/components/Container"
 import FadeIn from "@/components/FadeIn"
 import SectionIntro from "./SectionIntro";
@@ -36,8 +35,6 @@ const educationData = [
 ]
 
 export default function Education() {
-  const [activeCard, setActiveCard] = useState(null)
-
   return (
     <>
     <SectionIntro
@@ -74,24 +71,18 @@ export default function Education() {
             <div className="space-y-8 sm:space-y-12">
               {educationData.map((education, index) => (
                 <FadeIn key={education.id} className="relative">
-                  <div
-                    className={`group cursor-pointer transition-all duration-300 ${
-                      activeCard === education.id ? "transform scale-[1.02] sm:scale-105" : ""
-                    }`}
-                    onMouseEnter={() => setActiveCard(education.id)}
-                    onMouseLeave={() => setActiveCard(null)}
-                  >
+                  <div className="group">
                     {/* Timeline dot - responsive positioning */}
-                    <div className="absolute left-2 w-4 h-4 bg-neutral-950 rounded-full border-4 border-white shadow-lg z-10 group-hover:bg-neutral-600 transition-colors duration-300 sm:left-4 lg:left-6"></div>
+                    <div className="absolute left-2 w-4 h-4 bg-neutral-950 rounded-full border-4 border-white shadow-lg z-10 sm:left-4 lg:left-6"></div>
 
                     {/* Education card - responsive margins and padding */}
-                    <div className="ml-10 bg-white rounded-xl border border-neutral-200 p-4 shadow-sm hover:shadow-xl transition-all duration-300 group-hover:border-neutral-300 sm:ml-16 sm:p-6 lg:ml-20 lg:p-8 lg:rounded-2xl">
+                    <div className="ml-10 bg-white rounded-xl border border-neutral-200 p-4 shadow-sm sm:ml-16 sm:p-6 lg:ml-20 lg:p-8 lg:rounded-2xl">
                       {/* Header section - responsive layout */}
                       <div className="flex flex-col gap-4 mb-4 sm:flex-row sm:items-start sm:justify-between">
                         <div className="flex items-start gap-3 sm:gap-4">
                           <div className="text-2xl sm:text-3xl lg:text-4xl flex-shrink-0">{education.logo}</div>
                           <div className="min-w-0 flex-1">
-                            <h3 className="font-display text-lg font-semibold text-neutral-950 group-hover:text-neutral-700 transition-colors sm:text-xl leading-tight">
+                            <h3 className="font-display text-lg font-semibold text-neutral-950 sm:text-xl leading-tight">
                               {education.institution}
                             </h3>
                             <p className="text-base text-neutral-600 font-medium mt-1 sm:text-lg">{education.degree}</p>
@@ -119,9 +110,6 @@ export default function Education() {
                           {education.description}
                         </p>
                       )}
-
-                      {/* Hover effect gradient */}
-                      <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-neutral-950/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none lg:rounded-2xl"></div>
                     </div>
                   </div>
                 </FadeIn>

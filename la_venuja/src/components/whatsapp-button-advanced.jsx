@@ -26,83 +26,63 @@ export default function WhatsAppButtonAdvanced({
 
   return (
     <>
-      {/* Chat Widget */}
+      {/* Chat Widget - Minimalistic */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 w-80 z-40 bg-white rounded-lg shadow-2xl border border-gray-300">
-          {/* Header - Black and White */}
-          <div className="bg-black text-white p-4 rounded-t-lg">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-full bg-gray-600 flex items-center justify-center">
-                  <WhatsAppIcon size={20} className="text-green-500" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-white">{businessName}</h3>
-                  <p className="text-sm text-gray-300">Online</p>
-                </div>
-              </div>
-              <button
-                onClick={() => setIsOpen(false)}
-                className="text-white hover:bg-gray-800 p-1 rounded transition-colors"
-                aria-label="Close chat"
-              >
-                <X size={16} />
-              </button>
+        <div className="fixed bottom-20 right-6 w-80 z-40 bg-white rounded-lg shadow-lg border border-gray-200">
+          {/* Header */}
+          <div className="flex items-center justify-between p-3 border-b border-gray-200">
+            <div className="flex items-center gap-2">
+              <WhatsAppIcon size={20} className="text-black" />
+              <span className="text-sm font-medium text-black">{businessName}</span>
             </div>
+            <button
+              onClick={() => setIsOpen(false)}
+              className="text-gray-500 hover:text-black transition-colors"
+              aria-label="Close chat"
+            >
+              <X size={18} />
+            </button>
           </div>
 
-          {/* Content - Black and White */}
-          <div className="p-4 bg-white">
-            <div className="mb-4">
-              <div className="bg-gray-100 rounded-lg p-3 mb-4 border border-gray-200">
-                <p className="text-sm text-gray-800">{welcomeMessage}</p>
-              </div>
-
-              <div className="space-y-2">
-                <p className="text-sm font-medium text-gray-700 mb-2">Quick replies:</p>
-                {quickMessages.map((msg, index) => (
-                  <button
-                    key={index}
-                    onClick={() => sendMessage(msg)}
-                    className="w-full text-left p-2 text-sm border border-gray-300 rounded-lg hover:bg-gray-100 transition-colors text-gray-800 bg-white"
-                  >
-                    {msg}
-                  </button>
-                ))}
-              </div>
-
-              <button
-                onClick={() => sendMessage("Hello! I'd like to get in touch.")}
-                className="w-full mt-4 bg-black hover:bg-gray-800 text-white py-2 px-4 rounded-lg transition-colors font-medium flex items-center justify-center gap-2"
-              >
-                <WhatsAppIcon size={16} className="text-green-500" />
-                Start Chat
-              </button>
+          {/* Content */}
+          <div className="p-3">
+            <div className="bg-gray-50 rounded p-2 mb-3 text-xs text-gray-700">
+              {welcomeMessage}
             </div>
+
+            <div className="space-y-2 mb-3">
+              {quickMessages.map((msg, index) => (
+                <button
+                  key={index}
+                  onClick={() => sendMessage(msg)}
+                  className="w-full text-left p-2 text-xs border border-gray-200 rounded hover:border-black hover:bg-gray-50 transition-colors text-gray-700"
+                >
+                  {msg}
+                </button>
+              ))}
+            </div>
+
+            <button
+              onClick={() => sendMessage("Hello! I'd like to get in touch.")}
+              className="w-full bg-black hover:bg-gray-800 text-white py-2 px-3 rounded text-xs transition-colors"
+            >
+              Start Chat
+            </button>
           </div>
         </div>
       )}
 
-      {/* Main Button - Green WhatsApp Icon */}
+      {/* Main Button - Icon Only */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`
-          fixed bottom-6 right-6 w-14 h-14 z-50
-          bg-green-500 hover:bg-green-600 text-white rounded-full
-          shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out
-          flex items-center justify-center group
-          transform hover:scale-110 active:scale-95
-          focus:outline-none focus:ring-4 focus:ring-green-300
-        `}
+        className="fixed bottom-6 right-6 z-50 transition-transform hover:scale-110 active:scale-95 focus:outline-none"
         aria-label={isOpen ? "Close chat" : "Open WhatsApp chat"}
       >
         {isOpen ? (
-          <X size={24} className="transition-transform duration-200 text-white" />
+          <X size={32} className="text-black" />
         ) : (
-          <WhatsAppIcon size={24} className="transition-transform duration-200 group-hover:rotate-12 text-white" />
+          <WhatsAppIcon size={32} className="text-black" />
         )}
-
-        {!isOpen && <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-20"></div>}
       </button>
     </>
   )

@@ -63,8 +63,11 @@ export default function Home() {
                   I&apos;m Venuja
                 </h1>
                 <p className="mt-6 text-xl text-neutral-600">
-                  An undergraduate computer science student at SLIIT with a passion for building innovative projects and
-                  solving real-world problems through technology.
+                  I am a third-year undergraduate pursuing a degree in Computer Science at SLIIT, driven by a 
+                  passion for exploring innovative technologies and creating impactful solutions. 
+                  My academic journey has equipped me with hands-on experience in programming, database management, 
+                  and web development, while nurturing my analytical and problem-solving skills.
+
                 </p>
               </header>
               <a
@@ -92,9 +95,9 @@ export default function Home() {
             </FadeIn>
             <div className="flex justify-center lg:justify-end">
               <img
-                src="/newdp.jpg"
+                src="/untitled (4).png"
                 alt="Venuja Ranasinghe - Computer Science Student and Full Stack Developer"
-                style={{ maxWidth: "320px", height: "auto", display: "block" }}
+                style={{ width: "auto", maxHeight: "400px", display: "block" }}
                 loading="eager"
               />
             </div>
