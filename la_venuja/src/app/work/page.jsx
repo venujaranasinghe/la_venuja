@@ -92,14 +92,51 @@ const ProjectCard = ({ project, index }) => {
 const WorkPage = () => {
   const projects = [
     {
+      id: 10,
+      title: "Renal Unit Database",
+      description: "A patient management site for the renal unit of Peradeniya Teaching Hospital, built with Next.js and AWS DynamoDB. Streamlines patient data management, medical records, and treatment tracking for healthcare professionals with secure cloud-based storage.",
+      tags: ["NextJs", "AWS", "DynamoDB"],
+      imageUrl: "/ss2.png",
+      projectUrl: "https://renal-unit-database.vercel.app/",
+      githubUrl: "https://github.com/venujaranasinghe/Renal-Unit-Database",
+    },
+    {
+      id: 11,
+      title: "Serene Blooms",
+      description: "A comprehensive flower and event management web app built with React and ASP.NET, hosted on Azure. Enables seamless flower ordering, event booking, inventory management, and customer engagement with a beautiful, intuitive interface.",
+      tags: ["React", "ASP.NET", "Azure"],
+      imageUrl: "/ss1.png",
+      projectUrl: "https://serene-blooms.vercel.app/",
+      githubUrl: "https://github.com/venujaranasinghe/Serene-Blooms-CSP",
+    },
+    {
+      id: 12,
+      title: "The Glaze",
+      description: "A delightful cake shop web application built with React, Spring Boot, and MongoDB. Features online ordering, custom cake design options, product catalog, order tracking, and payment integration for a seamless bakery shopping experience.",
+      tags: ["React", "Spring Boot", "MongoDB"],
+      imageUrl: "/ss4.png",
+      projectUrl: "https://the-glaze.vercel.app/",
+      githubUrl: "https://github.com/venujaranasinghe/The-Glaze",
+    },
+    {
       id: 1,
-      title: "React Vite Portfolio",
+      title: "Blogify",
       description:
-        "Built with React.js and Vite, highlights my projects, skills, and experience through a fast, responsive, and modern design. Features smooth animations and optimized performance.",
-      tags: ["React", "Vite", "CSS", "JavaScript"],
-      imageUrl: "/1.png",
-      projectUrl: "https://venujaranasinghe.github.io/portfolio-react/",
-      githubUrl: "https://github.com/venujaranasinghe/portfolio-react",
+        "A feature-rich blog app built with Next.js and MongoDB, offering seamless content management, dynamic posts, and a smooth user experience with server-side rendering.",
+      tags: ["Next.js", "MongoDB", "Tailwind", "Vercel"],
+      imageUrl: "/ss3.png",
+      projectUrl: "https://github.com/venujaranasinghe/FullStack-Blog",
+      githubUrl: "https://github.com/venujaranasinghe/FullStack-Blog",
+    },
+    {
+      id: 2,
+      title: "PageSwap",
+      description:
+        "A book trading platform built with React, Java, Spring Boot, and MongoDB. Connects book enthusiasts to buy, sell, and exchange books with features like listing management, search filters, user ratings, and secure transactions for a thriving literary community.",
+      tags: ["Java", "React", "Spring Boot", "MongoDB"],
+      imageUrl: "/ss5.png",
+      projectUrl: "https://github.com/venujaranasinghe/OOAD-Group-Assignment",
+      githubUrl: "https://github.com/venujaranasinghe/Software-Testing-Tool-Evaluation",
     },
     {
       id: 2,
@@ -112,36 +149,6 @@ const WorkPage = () => {
       githubUrl: "https://github.com/venujaranasinghe/OOAD-Group-Assignment",
     },
     {
-      id: 3,
-      title: "MERN Blog App Admin Dashboard",
-      description:
-        "An intuitive admin dashboard for the blog app, providing efficient post management, user controls, and analytics for streamlined content moderation with modern UI/UX.",
-      tags: ["React", "MongoDB", "Node.js", "Express", "Tailwind"],
-      imageUrl: "/4.png",
-      projectUrl: "https://full-stack-blog-lake.vercel.app/login",
-      githubUrl: "https://github.com/venujaranasinghe/FullStack-Blog",
-    },
-    {
-      id: 4,
-      title: "Full-Stack Blogging Platform",
-      description:
-        "A feature-rich blog app built with Next.js and MongoDB, offering seamless content management, dynamic posts, and a smooth user experience with server-side rendering.",
-      tags: ["Next.js", "MongoDB", "Tailwind", "Vercel"],
-      imageUrl: "/5.png",
-      projectUrl: "https://github.com/venujaranasinghe/FullStack-Blog",
-      githubUrl: "https://github.com/venujaranasinghe/FullStack-Blog",
-    },
-    {
-      id: 5,
-      title: "3D Animated Portfolio",
-      description:
-        "A visually engaging portfolio with smooth 3D animations, built using React.js and Three.js for an immersive experience. Features interactive 3D models and particle systems.",
-      tags: ["React", "Three.js", "Framer Motion", "Tailwind"],
-      imageUrl: "/7.png",
-      projectUrl: "https://venuja-ranasinghe.vercel.app/",
-      githubUrl: "https://github.com/venujaranasinghe/3d-animated-portfolio",
-    },
-    {
       id: 6,
       title: "The Book I Never Wrote",
       description: "A poetic, interactive web experience that imagines the pages of a book that was never written. Crafted with React and Spring Boot, it blends storytelling with sleek, responsive design to evoke emotion and curiosity.",
@@ -152,7 +159,7 @@ const WorkPage = () => {
     },
     {
       id: 7,
-      title: "Personal Portfolio Website for a SE",
+      title: "Personal Website (Client: Shenal Silva)",
       description: "A sleek and responsive portfolio built for a professional software engineer to showcase their technical skills, projects, and experience. Designed with React for an interactive UI and powered by modern styling techniques to leave a lasting impression.",
       tags: ["React", "Tailwind CSS"],
       imageUrl: "/10.png",
@@ -161,23 +168,57 @@ const WorkPage = () => {
     },
     {
       id: 8,
-      title: "UI/UX Designer Portfolio Website",
+      title: "Personal Website (Client: Vidath Theekshana)",
       description: "A visually striking and minimalist portfolio crafted for a UI/UX designer to showcase case studies, design philosophy, and interactive prototypes. Built with React and Tailwind CSS to highlight creativity through clean layouts, smooth animations, and user-centric design.",
       tags: ["React", "Tailwind CSS", "Framer Motion"],
       imageUrl: "/11.png",
       projectUrl: "https://vidaththeekshana.vercel.app/",
       githubUrl: "https://github.com/venujaranasinghe/Vidath-Portfolio",
     },
+  
     {
-      id: 9,
-      title: "DevBeta – Full-Stack Developer Portfolio (Beta)",
-      description: "A functional beta portfolio tailored for a full-stack developer, featuring a clean layout to highlight core projects, tech stack, and developer journey. Built with React on the frontend and integrated with a Node.js/Express backend, this version focuses on structure, responsiveness, and backend connectivity as a foundation for future enhancements.",
-      tags: ["React", "Node.js", "Express", "MongoDB"],
-      imageUrl: "/9.png",
-      projectUrl: "https://fullstack-developer-portfolio-beta.vercel.app/",
-      githubUrl: "https://github.com/venujaranasinghe/Fullstack-Developer-Portfolio",
+      id: 1,
+      title: "Portfolio Website",
+      description:
+        "Built with React.js and Vite, highlights my projects, skills, and experience through a fast, responsive, and modern design. Features smooth animations and optimized performance.",
+      tags: ["React", "Vite", "CSS", "JavaScript"],
+      imageUrl: "/1.png",
+      projectUrl: "https://venujaranasinghe.github.io/portfolio-react/",
+      githubUrl: "https://github.com/venujaranasinghe/portfolio-react",
     },
-
+    {
+      id: 5,
+      title: "3D Animated Portfolio Website",
+      description:
+        "A visually engaging portfolio with smooth 3D animations, built using React.js and Three.js for an immersive experience. Features interactive 3D models and particle systems.",
+      tags: ["React", "Three.js", "Framer Motion", "Tailwind"],
+      imageUrl: "/7.png",
+      projectUrl: "https://venuja-ranasinghe.vercel.app/",
+      githubUrl: "https://github.com/venujaranasinghe/3d-animated-portfolio",
+    },
+    
+    // {
+    //   id: 3,
+    //   title: "MERN Blog App Admin Dashboard",
+    //   description:
+    //     "An intuitive admin dashboard for the blog app, providing efficient post management, user controls, and analytics for streamlined content moderation with modern UI/UX.",
+    //   tags: ["React", "MongoDB", "Node.js", "Express", "Tailwind"],
+    //   imageUrl: "/4.png",
+    //   projectUrl: "https://full-stack-blog-lake.vercel.app/login",
+    //   githubUrl: "https://github.com/venujaranasinghe/FullStack-Blog",
+    // },
+    
+    
+    
+    // {
+    //   id: 9,
+    //   title: "DevBeta – Full-Stack Developer Portfolio (Beta)",
+    //   description: "A functional beta portfolio tailored for a full-stack developer, featuring a clean layout to highlight core projects, tech stack, and developer journey. Built with React on the frontend and integrated with a Node.js/Express backend, this version focuses on structure, responsiveness, and backend connectivity as a foundation for future enhancements.",
+    //   tags: ["React", "Node.js", "Express", "MongoDB"],
+    //   imageUrl: "/9.png",
+    //   projectUrl: "https://fullstack-developer-portfolio-beta.vercel.app/",
+    //   githubUrl: "https://github.com/venujaranasinghe/Fullstack-Developer-Portfolio",
+    // },
 
   ]
 
