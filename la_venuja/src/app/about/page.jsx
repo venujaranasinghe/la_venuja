@@ -50,8 +50,8 @@ const AboutPage = () => {
       <Deliver />
       <Container className="mt-16">
         <StatList>
-          <StatListItem value="7+" label="Projects Completed" />
-          <StatListItem value="2+" label="Happy Clients" />
+          <StatListItem value="10+" label="Projects Completed" />
+          <StatListItem value="10+" label="Happy Clients" />
         </StatList>
       </Container>
       <Cultures />

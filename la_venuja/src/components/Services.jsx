@@ -3,7 +3,6 @@ import SectionIntro from "./SectionIntro";
 import Container from "./Container";
 import FadeIn from "./FadeIn";
 import StylizedImage from "./StylizedImage";
-import imageLaptop from "../images/setup.jpg";
 import List, { ListItem } from "./List";
 
 const Services = () => {
@@ -23,7 +22,9 @@ const Services = () => {
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
-                src={imageLaptop}
+                src="/abb.png"
+                width={719}
+                height={680}
                 sizes="(min-width: 1024px) 41rem, 31rem"
                 className="justify-center lg:justify-end"
               />
@@ -40,6 +41,12 @@ const Services = () => {
             <ListItem title="Database Management">
             I design, implement, and maintain well-structured databases using MySQL and MongoDB. My approach emphasizes data integrity, optimized queries, and secure storage to ensure high performance and reliability in application data handling.
             </ListItem>
+              <ListItem title="DevOps">
+              I implement CI/CD pipelines, automate deployments, and manage infrastructure using tools like GitHub Actions, Jenkins, and Docker. My DevOps practices ensure rapid, reliable, and repeatable software delivery.
+              </ListItem>
+              <ListItem title="Cloud">
+              I architect, deploy, and manage cloud solutions on AWS, Azure, and GCP. My expertise includes cloud migration, cost optimization, and leveraging cloud-native services for scalable and secure applications.
+              </ListItem>
           </List>
         </div>
       </Container>

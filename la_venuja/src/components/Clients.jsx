@@ -26,27 +26,33 @@ import {
     ["Java", Coffee],
     ["Python", Terminal],
     ["C", Code],
-    ["React", Component],
-    ["Next.js", ArrowRight],
-    ["HTML", FileText],
-    ["CSS", Palette],
-    ["JavaScript", Braces],
-    ["TypeScript", Code],
-    //["Node.js", Server],
-    ["Git", GitBranch],
-    //["Docker", ContainerIcon],
-    ["MongoDB", Database],
-    ["PostgreSQL", Database],
-    //["AWS", Cloud],
-    ["REST API", Globe],
-    ["React Native", Smartphone],
-    //["Express", Package],
-    //["VS Code", Settings],
-  ]
-  
-  const Clients = () => {
+  ["C#", Code],
+  [".NET", Package],
+  ["React", Component],
+  ["Next.js", ArrowRight],
+  ["HTML", FileText],
+  ["CSS", Palette],
+  ["JavaScript", Braces],
+  ["TypeScript", Code],
+  //["Node.js", Server],
+  ["Git", GitBranch],
+  ["Docker", ContainerIcon],
+  ["MongoDB", Database],
+  ["PostgreSQL", Database],
+  ["AWS", Cloud],
+  ["Azure", Cloud],
+  ["GCP", Cloud],
+  ["GitHub Actions", Settings],
+  ["Jenkins", Settings],
+  ["REST API", Globe],
+  ["React Native", Smartphone],
+  //["Express", Package],
+  //["VS Code", Settings],
+]
+
+const Clients = () => {
     return (
-      <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+      <div className="mt-16 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-24">
         <Container>
           <FadeIn className="flex items-center gap-x-8">
             <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
@@ -55,7 +61,7 @@ import {
             <div className="h-px flex-auto bg-neutral-800" />
           </FadeIn>
           <FadeInStagger faster>
-            <ul role="list" className="mt-10 grid grid-cols-2 gap-x-4 gap-y-4 sm:grid-cols-3 lg:grid-cols-5">
+            <ul role="list" className="mt-10 grid grid-cols-2 gap-x-4 gap-y-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
               {clients.map(([client, IconComponent]) => (
                 <li key={client}>
                   <FadeIn>
