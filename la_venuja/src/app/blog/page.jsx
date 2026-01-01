@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import PageIntro from "@/components/PageIntro"
-import ParticlesBackground from "@/components/ParticlesBackground"
+//import ParticlesBackground from "@/components/ParticlesBackground"
 import SectionIntro from "@/components/SectionIntro";
 
 export default function BlogPage() {
@@ -39,7 +39,6 @@ export default function BlogPage() {
         </p>
       </SectionIntro>
     <div className="min-h-screen bg-white">
-      <ParticlesBackground />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header
         <div className="text-center mb-16">

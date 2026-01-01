@@ -6,7 +6,7 @@ import { StatList, StatListItem } from "@/components/StatList";
 import React from "react";
 import Build from "@/components/Build";
 import Deliver from "@/components/Deliver";
-import ParticlesBackground from "@/components/ParticlesBackground";
+//import ParticlesBackground from "@/components/ParticlesBackground";
 
 export const metadata = {
   title: "About Me",
@@ -21,7 +21,6 @@ export const metadata = {
 const AboutPage = () => {
   return (
     <>
-      <ParticlesBackground />
       <PageIntro eyebrow="About me" title="Who Am I">
         
         {/* <p>A Computer Science Undergraduate, Web Developer & Machine Learning Enthusiast</p> */}

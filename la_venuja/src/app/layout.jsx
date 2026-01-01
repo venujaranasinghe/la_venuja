@@ -6,7 +6,7 @@ export const metadata = {
   metadataBase: new URL('https://la-venuja.vercel.app/'), // Replace with your actual domain
   title: {
     template: "%s | Venuja Ranasinghe - Full Stack Developer",
-    default: "Venuja Ranasinghe - Full Stack Developer & Computer Science Student",
+    default: "Venuja Ranasinghe",
   },
   description: "Venuja Ranasinghe is an undergraduate Computer Science student at SLIIT specializing in full-stack development, machine learning, and innovative web solutions. Explore my portfolio of projects and get in touch for collaborations.",
   keywords: ["Venuja Ranasinghe", "Full Stack Developer", "Computer Science", "SLIIT", "Web Development", "Machine Learning", "React", "Next.js", "Portfolio"],
@@ -28,7 +28,7 @@ export const metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://la-venuja.vercel.app/',
-    title: 'Venuja Ranasinghe - Full Stack Developer & Computer Science Student',
+    title: 'Venuja Ranasinghe',
     description: 'Explore the portfolio of Venuja Ranasinghe, a Computer Science student at SLIIT specializing in full-stack development and machine learning.',
     siteName: 'Venuja Ranasinghe Portfolio',
     images: [
