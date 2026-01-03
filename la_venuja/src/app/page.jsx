@@ -95,9 +95,9 @@ export default function Home() {
             </FadeIn>
             <div className="flex justify-center lg:justify-end">
               <img
-                src="/untitled (4).png"
+                src="/untitled (5).png"
                 alt="Venuja Ranasinghe - Computer Science Student and Full Stack Developer"
-                style={{ width: "auto", maxHeight: "400px", display: "block" }}
+                style={{ width: "auto", maxHeight: "500px", display: "block" }}
                 loading="eager"
               />
             </div>
