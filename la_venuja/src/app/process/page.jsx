@@ -13,7 +13,7 @@ const CertificateCard = ({ certificate, index }) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
       viewport={{ once: true }}
-      className="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-2xl hover:border-gray-200 transition-all duration-500"
+      className="group relative bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-2xl hover:border-gray-200 transition-all duration-500"
     >
       <div className="relative aspect-[4/3] overflow-hidden">
         <Image
@@ -23,6 +23,9 @@ const CertificateCard = ({ certificate, index }) => {
           className="object-cover group-hover:scale-105 transition-transform duration-500"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
         />
+        <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+          <p className="text-white text-center text-sm font-medium">{certificate.title}</p>
+        </div>
       </div>
     </motion.div>
   )
