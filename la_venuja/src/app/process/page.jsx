@@ -5,15 +5,17 @@ import PageIntro from "@/components/PageIntro"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Values from "@/components/Values"
+import { useState } from "react"
 
-const CertificateCard = ({ certificate, index }) => {
+const CertificateCard = ({ certificate, index, onClick }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
       viewport={{ once: true }}
-      className="group relative bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-2xl hover:border-gray-200 transition-all duration-500"
+      onClick={onClick}
+      className="group relative bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-2xl hover:border-gray-200 transition-all duration-500 cursor-pointer"
     >
       <div className="relative aspect-[4/3] overflow-hidden">
         <Image
@@ -32,6 +34,8 @@ const CertificateCard = ({ certificate, index }) => {
 }
 
 const ProcessPage = () => {
+  const [selectedCertificate, setSelectedCertificate] = useState(null)
+
   const certificates = [
     // {
     //   id: 1,
@@ -130,9 +134,19 @@ const ProcessPage = () => {
           {/* Certificates Grid - 4 per row */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {certificates.map((certificate, index) => (
-              <CertificateCard key={certificate.id} certificate={certificate} index={index} />
+              <CertificateCard key={certificate.id} certificate={certificate} index={index} onClick={() => setSelectedCertificate(certificate)} />
             ))}
           </div>
+
+          {/* Certificate Modal */}
+          {selectedCertificate && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4" onClick={() => setSelectedCertificate(null)}>
+              <div className="relative max-w-5xl w-full max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
+                <button onClick={() => setSelectedCertificate(null)} className="absolute -top-10 right-0 text-white text-3xl hover:text-gray-300">&times;</button>
+                <img src={selectedCertificate.imageUrl} alt={selectedCertificate.title} className="w-full h-auto rounded-lg" />
+              </div>
+            </div>
+          )}
         </motion.div>
       </section>
 

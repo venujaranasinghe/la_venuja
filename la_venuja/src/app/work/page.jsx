@@ -2,12 +2,12 @@
 
 import PageIntro from "@/components/PageIntro"
 import ProjectStructuredData from "@/components/ProjectStructuredData"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import { ExternalLink, Github, Code, ArrowRight } from "lucide-react"
 
-const ProjectCard = ({ project, index }) => {
+const ProjectCard = ({ project, index, onClick }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -17,16 +17,18 @@ const ProjectCard = ({ project, index }) => {
       className="group relative bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden transform hover:scale-[1.02] transition-all duration-500 ease-out"
     >
       {/* Project Image */}
-      <div className="relative w-full h-60 overflow-hidden">
+      <div className="relative w-full h-60 overflow-hidden cursor-pointer" onClick={onClick}>
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900/20 to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
         <img
           src={project.imageUrl || "/placeholder.svg?height=240&width=360&query=abstract project screenshot"}
           alt={project.title}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-500"></div>
+        <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6 z-20">
+          <p className="text-white text-center text-sm leading-relaxed">{project.description}</p>
+        </div>
         {/* Floating Project Number */}
-        <div className="absolute top-4 right-4 w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center text-white font-bold text-md shadow-lg z-20">
+        <div className="absolute top-4 right-4 w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center text-white font-bold text-md shadow-lg z-30">
           {String(index + 1).padStart(2, "0")}
         </div>
       </div>
@@ -39,9 +41,6 @@ const ProjectCard = ({ project, index }) => {
         <h3 className="text-2xl font-bold text-black leading-tight group-hover:text-gray-700 transition-colors duration-300">
           {project.title}
         </h3>
-        <div className="bg-gray-50 p-4 rounded-lg border border-gray-100 shadow-sm">
-          <p className="text-gray-700 leading-relaxed text-base">{project.description}</p>
-        </div>
         {/* Tech Stack */}
         <div className="space-y-2 pt-2">
           <div className="flex items-center gap-2 text-gray-600">
@@ -90,6 +89,8 @@ const ProjectCard = ({ project, index }) => {
 }
 
 const WorkPage = () => {
+  const [selectedProject, setSelectedProject] = useState(null)
+
   const projects = [
     {
       id: 10,
@@ -291,9 +292,19 @@ const WorkPage = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {projects.map((project, index) => (
-            <ProjectCard key={project.id} project={project} index={index} />
+            <ProjectCard key={project.id} project={project} index={index} onClick={() => setSelectedProject(project)} />
           ))}
         </motion.div>
+
+        {/* Project Modal */}
+        {selectedProject && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4" onClick={() => setSelectedProject(null)}>
+            <div className="relative max-w-5xl w-full max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
+              <button onClick={() => setSelectedProject(null)} className="absolute -top-10 right-0 text-white text-3xl hover:text-gray-300">&times;</button>
+              <img src={selectedProject.imageUrl} alt={selectedProject.title} className="w-full h-auto rounded-lg" />
+            </div>
+          </div>
+        )}
       </section>
 
       {/* Call to Action */}

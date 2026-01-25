@@ -25,6 +25,42 @@ export default function BlogPage() {
       mediumUrl: "https://medium.com/@venuja12345/what-i-wish-i-knew-before-starting-computer-science-64746d4654e6",
       readTime: "4 min read",
     },
+    {
+      slug: "ai-agent-capabilities",
+      title: "How Do AI Agent Capabilities Scale from Simple Reflexes to Complex Learning",
+      excerpt:
+        "2025 is the most important year in the world of AI agents because there have been many announcements and updates...",
+      image: "/blog3.jpg",
+      mediumUrl: "https://venujaranasinghe.medium.com/how-do-ai-agent-capabilities-scale-from-simple-reflexes-to-complex-learning-b970b06ebb5f",
+      readTime: "7 min read",
+    },
+    {
+      slug: "ec2-vs-aws-lambda",
+      title: "EC2 vs AWS Lambda: When Should You Use Which?",
+      excerpt:
+        "When starting with AWS, one of the most common questions is: Should I use...",
+      image: "/blog4.jpg",
+      mediumUrl: "https://venujaranasinghe.medium.com/ec2-vs-aws-lambda-when-should-you-use-which-4193a8dee159",
+      readTime: "4 min read",
+    },
+    {
+      slug: "design-patterns-made-simple",
+      title: "Design Patterns Made Simple: Learning Software Design Through a Coffee Shop",
+      excerpt:
+        "When people hear the term design patterns, many assume it’s something highly theoretical or...",
+      image: "/blog5.jpg",
+      mediumUrl: "https://venujaranasinghe.medium.com/design-patterns-made-simple-learning-software-design-through-a-coffee-shop-45492ab7e912",
+      readTime: "4 min read",
+    },
+    {
+      slug: "reactjs-in-sinhala",
+      title: "ReactJS තේරෙන සිංහලෙන්",
+      excerpt:
+        "අද කාලේ අපි use කරන almost හැම web application එකක්ම හරිම fast and interactive. මෙන්න මේකට...",
+      image: "/blog6.jpg",
+      mediumUrl: "https://venujaranasinghe.medium.com/reactjs-%E0%B6%AD%E0%B7%9A%E0%B6%BB%E0%B7%99%E0%B6%B1-%E0%B7%83%E0%B7%92%E0%B6%82%E0%B7%84%E0%B6%BD%E0%B7%99%E0%B6%B1%E0%B7%8A-fd1675309f23",
+      readTime: "9 min read",
+    },
   ]
 
   return (
