@@ -81,9 +81,24 @@ const ProcessPage = () => {
       imageUrl: "/c10.png",
     },
     {
-      id: 2,
+      id: 11,
       title: "Introduction to SQL",
       imageUrl: "/c11.png",
+    },
+    {
+      id: 11,
+      title: "AWS Basics",
+      imageUrl: "/kc1.png",
+    },
+    {
+      id: 12,
+      title: "Docker For Beginners",
+      imageUrl: "/kc2.png",
+    },
+    {
+      id: 13,
+      title: "Kubernetes For Beginners",
+      imageUrl: "/kc3.png",
     },
   ]
 
