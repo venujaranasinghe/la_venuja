@@ -546,7 +546,10 @@ const GF_CSS = `
 .gf-art {
   position: absolute;
   inset: -8px;
-  background-size: cover;
+  width: calc(100% + 16px);
+  height: calc(100% + 16px);
+  object-fit: cover;
+  display: block;
   transform: translate3d(calc(var(--gf-px) * -4px), calc(var(--gf-py) * -3px), 0);
   transition: transform 0.3s ease-out;
 }
@@ -638,13 +641,14 @@ const GF_CSS = `
   inset: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
+  object-fit: cover;
+  display: block;
 }
 .gf-sheet--art::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, transparent 40%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.05) 45%, rgba(0, 0, 0, 0.6) 100%);
   pointer-events: none;
 }
 

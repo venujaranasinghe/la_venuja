@@ -8,26 +8,26 @@ import GlassFolder from "@/components/ui/glass-folder-cards"
 const PROJECT_FILES = [
   {
     name: "Renal Unit Database",
-    meta: "Next.js · AWS",
-    art: "aurora",
+    meta: "Next.js · AWS DynamoDB",
+    image: "/ss2.png",
     href: "/work",
   },
   {
-    name: "Full-Stack Portfolio",
-    meta: "Next.js · GSAP",
-    art: "glacier",
+    name: "Serene Blooms",
+    meta: "React · ASP.NET · Azure",
+    image: "/ss1.png",
     href: "/work",
   },
   {
-    name: "AI Agent Orchestrator",
-    meta: "Python · LangChain",
-    art: "ember",
+    name: "The Glaze Bakery",
+    meta: "React · Spring Boot · MongoDB",
+    image: "/ss4.png",
     href: "/work",
   },
   {
-    name: "Skyline Visualizer",
-    meta: "Three.js · React",
-    art: "verdant",
+    name: "Blogify Full-Stack",
+    meta: "Next.js · MongoDB · Tailwind",
+    image: "/ss3.png",
     href: "/work",
   },
 ]
@@ -36,52 +36,52 @@ const BLOG_FILES = [
   {
     name: "80/20 Rule for Productivity",
     meta: "Medium · 5 min read",
-    art: "dusk",
+    image: "/Blog1.png",
     href: "https://medium.com/@venuja12345/how-i-apply-the-80-20-rule-to-maximize-my-productivity-as-an-undergrad-cd0be726e6da",
   },
   {
     name: "What I Wish I Knew in CS",
     meta: "Medium · 4 min read",
-    art: "ember",
+    image: "/blog2.jpg",
     href: "https://medium.com/@venuja12345/what-i-wish-i-knew-before-starting-computer-science-64746d4654e6",
   },
   {
     name: "AI Agent Capabilities Scale",
     meta: "Medium · 7 min read",
-    art: "aurora",
+    image: "/blog3.jpg",
     href: "https://venujaranasinghe.medium.com/how-do-ai-agent-capabilities-scale-from-simple-reflexes-to-complex-learning-b970b06ebb5f",
   },
   {
     name: "EC2 vs AWS Lambda Guide",
     meta: "Medium · 4 min read",
-    art: "glacier",
+    image: "/blog4.jpg",
     href: "https://venujaranasinghe.medium.com/ec2-vs-aws-lambda-when-should-you-use-which-4193a8dee159",
   },
 ]
 
 const CERTIFICATE_FILES = [
   {
-    name: "DevOps on AWS",
-    meta: "AWS Training · Cloud",
-    art: "ember",
+    name: "DevOps On AWS",
+    meta: "AWS Training & Certification",
+    image: "/c1.png",
     href: "/process",
   },
   {
     name: "Python for Beginners",
     meta: "Python Institute",
-    art: "verdant",
+    image: "/c2.png",
     href: "/process",
   },
   {
     name: "AI/ML Engineer - Stage 1",
-    meta: "Machine Learning",
-    art: "aurora",
+    meta: "Machine Learning Credential",
+    image: "/c4.png",
     href: "/process",
   },
   {
-    name: "Cloud Architecture",
-    meta: "AWS Credential",
-    art: "glacier",
+    name: "Python Essentials",
+    meta: "Cisco Networking Academy",
+    image: "/c5.png",
     href: "/process",
   },
 ]
@@ -121,12 +121,12 @@ export default function ShowcaseFolders() {
           }}
         />
 
-        <div className="grid grid-cols-1 items-end justify-items-center gap-x-10 gap-y-16 pt-8 pb-12 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 items-end justify-items-center gap-x-10 gap-y-16 pt-10 pb-14 md:grid-cols-2 xl:grid-cols-3">
           {/* Projects Folder */}
           <div className="flex flex-col items-center">
             <GlassFolder
               label="Projects"
-              art="aurora"
+              image="/ss2.png"
               seed={5}
               appearDelay={0}
               files={PROJECT_FILES}
@@ -153,10 +153,10 @@ export default function ShowcaseFolders() {
           <div className="flex flex-col items-center">
             <GlassFolder
               label="Tech Blogs"
-              art="dusk"
+              image="/Blog1.png"
               seed={18}
               tone="light"
-              appearDelay={140}
+              appearDelay={120}
               files={BLOG_FILES}
               action="more"
               labelPlacement="top-left"
@@ -182,9 +182,9 @@ export default function ShowcaseFolders() {
             <GlassFolder
               label="Certificates"
               tone="dark"
-              art="ember"
+              image="/c1.png"
               seed={27}
-              appearDelay={280}
+              appearDelay={240}
               files={CERTIFICATE_FILES}
               action="more"
               labelPlacement="bottom-left"
