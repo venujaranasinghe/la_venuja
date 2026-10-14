@@ -8,6 +8,8 @@ import FadeIn from "@/components/FadeIn"
 import Services from "@/components/Services"
 import Testimonials from "@/components/Testimonials"
 import Education from "@/components/Education"
+import ShowcaseFolders from "@/components/ShowcaseFolders"
+import GithubContributions from "@/components/GithubContributions"
 import logoPhobiaDark from "@/images/clients/green-life/logo-dark.svg"
 import TypingAnimation from "@/components/TypingAnimation"
 import WhatsAppButtonAdvanced from "@/components/whatsapp-button-advanced"
@@ -27,6 +29,8 @@ export default function Home() {
           initialLoader.style.display = "none"
           setIsLoading(false)
         }, 500)
+      } else {
+        setIsLoading(false)
       }
     }
 
@@ -125,6 +129,8 @@ export default function Home() {
 
       <Services />
       <Education />
+      <ShowcaseFolders />
+      <GithubContributions />
       <ContactSection />
     </main>
   )

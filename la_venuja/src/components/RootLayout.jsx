@@ -191,7 +191,7 @@ const RootLayoutInner = ({ children }) => {
         <motion.div
           layout
           style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40 }}
-          className="relative flex flex-auto overflow-hidden bg-white pt-14"
+          className="relative flex flex-auto overflow-clip bg-white pt-14"
         >
           <motion.div
             layout
